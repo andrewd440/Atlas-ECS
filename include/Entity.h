@@ -12,7 +12,7 @@ namespace Atlas
 	class World;
 
 	/**
-	* Used to represent any game object.
+	* Used to represent any game object. 
 	* Acts as a grouping/container for Components.
 	*/
 	class Entity : public NonCopyable
