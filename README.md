@@ -15,7 +15,7 @@ Online [Doxygen](http://www.stack.nl/~dimitri/doxygen/) generated documentation:
 
 ## Entities
  
-Entitys are essensially a container of Components. Each `Atlas::Entity` has a unique `Atlas::Entity::ID` 
+Entities are essensially a container of Components. Each `Atlas::Entity` has a unique `Atlas::Entity::ID` 
 that is used to represent relationships with `Atlas::Component`s. 
 
 All entities are created internally by the `Atlas::EntityManager`. In addition, `Atlas::World` provides a delegated function 
