@@ -1,0 +1,4 @@
+<map id="Atlas::Entity::getID" name="Atlas::Entity::getID">
+<area shape="rect" id="node2" href="$class_atlas_1_1_entity_manager.html#a82644ec8d97252f35a9f0277968c8c9c" title="Retrieve a specific Component from an Entity. " alt="" coords="187,5,331,46"/>
+<area shape="rect" id="node3" href="$class_atlas_1_1_entity.html#a1b593b3996207a6bd4b75404cf081261" title="Retrieves a specified Component from the Entity. " alt="" coords="379,12,565,39"/>
+</map>

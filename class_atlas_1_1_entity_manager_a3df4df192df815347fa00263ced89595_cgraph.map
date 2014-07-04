@@ -1,0 +1,4 @@
+<map id="Atlas::EntityManager::getAllComponentsFor" name="Atlas::EntityManager::getAllComponentsFor">
+<area shape="rect" id="node2" href="$class_atlas_1_1_entity.html#ad9209a60e395421878e04100792c3ae2" title="Retrieves the Component bits in use by the Entity. " alt="" coords="209,5,418,32"/>
+<area shape="rect" id="node3" href="$class_atlas_1_1_entity.html#aa06de1474978a96071f84deee7e17487" title="Retrieves the ID assigned to the Entity. " alt="" coords="247,56,379,83"/>
+</map>
