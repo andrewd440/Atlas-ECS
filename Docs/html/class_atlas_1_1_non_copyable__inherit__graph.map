@@ -1,0 +1,8 @@
+<map id="Atlas::NonCopyable" name="Atlas::NonCopyable">
+<area shape="rect" id="node2" href="$class_atlas_1_1_entity.html" title="Used to represent any game object. " alt="" coords="230,5,325,32"/>
+<area shape="rect" id="node3" href="$class_atlas_1_1_entity_manager.html" title="Manages all Entities and Components within the a World. " alt="" coords="205,56,349,83"/>
+<area shape="rect" id="node4" href="$class_atlas_1_1_group_manager.html" title="Used to organize entities into named groups. " alt="" coords="205,107,350,133"/>
+<area shape="rect" id="node5" href="$class_atlas_1_1_system.html" title="Atlas::System" alt="" coords="225,157,330,184"/>
+<area shape="rect" id="node6" href="$class_atlas_1_1_system_bit_manager.html" title="Used to distribute a unique bit identifier to each System created. " alt="" coords="192,208,363,235"/>
+<area shape="rect" id="node7" href="$class_atlas_1_1_system_manager.html" title="A manager for all Systems that are used. " alt="" coords="200,259,355,285"/>
+</map>

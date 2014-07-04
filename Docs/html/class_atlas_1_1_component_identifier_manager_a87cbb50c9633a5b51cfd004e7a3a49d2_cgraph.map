@@ -1,0 +1,4 @@
+<map id="Atlas::ComponentIdentifierManager::getBits" name="Atlas::ComponentIdentifierManager::getBits">
+<area shape="rect" id="node2" href="$class_atlas_1_1_component_identifier_manager.html#afb593e64b016e09a0ea0be90b0e6b11e" title="Retrieves an identifier for a Component. " alt="" coords="230,5,405,46"/>
+<area shape="rect" id="node3" href="$class_atlas_1_1_component_identifier.html#a33affd39217f817eb1504799523eff13" title="Retrieves the unique bitset for the identifier. " alt="" coords="230,70,405,111"/>
+</map>

@@ -1,0 +1,7 @@
+<map id="Atlas::Entity::getComponentBits" name="Atlas::Entity::getComponentBits">
+<area shape="rect" id="node2" href="$class_atlas_1_1_entity_manager.html#a3df4df192df815347fa00263ced89595" title="Retrieves all the Components attached to an Entity. " alt="" coords="283,5,437,46"/>
+<area shape="rect" id="node6" href="$class_atlas_1_1_system.html#ac0e8248fc5dfcaafcf76dc2fcb0f4f1f" title="Checks to see if the System is interested in an Entity based on which Components it owns..." alt="" coords="265,71,455,97"/>
+<area shape="rect" id="node3" href="$class_atlas_1_1_entity.html#af3489a5cccdf5a7862ace07bdb6e8237" title="Retrieves all Components that are attached to the Entity. " alt="" coords="504,12,712,39"/>
+<area shape="rect" id="node4" href="$class_atlas_1_1_entity.html#ad4c7b1eb2ace713aa9713031bdb58ab8" title="Prints the ID, Component bits, Component list, and Active state of the Entity. " alt="" coords="760,12,907,39"/>
+<area shape="rect" id="node5" href="$class_atlas_1_1_entity_manager.html#ad2d3c2aa57235efe5e835b30625fa31f" title="Prints the contents of all active Entities and displays the number of inactive Entities. " alt="" coords="955,5,1099,46"/>
+</map>
