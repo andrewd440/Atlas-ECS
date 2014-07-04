@@ -5,6 +5,9 @@ high-performance code-architectures in modern C++ 11. Atlas was designed to take
 Atlas is a simple and convenient component entity system that has influences
 from the popular Java ECS [Artemis](http://gamadu.com/artemis/)
  
+## Documentation
+Online [Doxygen](http://www.stack.nl/~dimitri/doxygen/) generated documentation: [Atlas API](http://andrewd440.github.io/Atlas-ECS/index.html)
+ 
 ## Tutorial
  This simple example showcases Atlas' use of a `PositionComponent` and `VelocityComponent` in conjuction with
  a `MovementSystem` to process the movement of an `Atlas::Entity`.
