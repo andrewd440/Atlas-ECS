@@ -75,7 +75,7 @@ namespace Atlas
 		* Retrieves the ID assigned to the Entity
 		* @return The ID
 		*/
-		ID									getID() const;
+		ID											getID() const;
 		
 		/**
 		* Checks if the Entity is active
@@ -151,7 +151,7 @@ namespace Atlas
 		void										removeComponentBit(const std::bitset<BITSIZE>& Bit);
 
 	private:
-		ID									mID;
+		ID											mID;
 		std::bitset<BITSIZE>						mComponentBits;
 		std::bitset<BITSIZE>						mSystemBits;
 		EntityManager&								mEntityManager;
