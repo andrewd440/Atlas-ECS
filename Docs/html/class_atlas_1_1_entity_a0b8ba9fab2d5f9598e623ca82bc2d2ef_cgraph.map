@@ -1,7 +1,0 @@
-<map id="Atlas::Entity::addComponent" name="Atlas::Entity::addComponent">
-<area shape="rect" id="node2" href="$class_atlas_1_1_entity_manager.html#a60d98b2af0fdcfd9fce742261d60d64a" title="Attaches a Component to an Entity. " alt="" coords="243,93,387,134"/>
-<area shape="rect" id="node3" href="$class_atlas_1_1_component_identifier_manager.html#afb593e64b016e09a0ea0be90b0e6b11e" title="Retrieves an identifier for a Component. " alt="" coords="435,5,610,46"/>
-<area shape="rect" id="node4" href="$class_atlas_1_1_entity.html#aa06de1474978a96071f84deee7e17487" title="Retrieves the ID assigned to the Entity. " alt="" coords="670,100,802,127"/>
-<area shape="rect" id="node5" href="$class_atlas_1_1_entity_manager.html#a5a4385e95a442c49cf5542361eb8b0b0" title="Removes a Component from an Entity. " alt="" coords="451,122,595,163"/>
-<area shape="rect" id="node6" href="$class_atlas_1_1_system_manager.html#a5ab98082b7e41cffe6ea6842ea0e9e06" title="Checks to see if the any Systems contained in the SystemManager is interested in an Entity based on w..." alt="" coords="659,166,813,207"/>
-</map>

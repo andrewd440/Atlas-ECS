@@ -1,7 +1,0 @@
-<map id="Atlas::SystemManager::checkInterest" name="Atlas::SystemManager::checkInterest">
-<area shape="rect" id="node2" href="$class_atlas_1_1_entity_manager.html#a60d98b2af0fdcfd9fce742261d60d64a" title="Attaches a Component to an Entity. " alt="" coords="468,5,612,46"/>
-<area shape="rect" id="node4" href="$class_atlas_1_1_entity_manager.html#a5a4385e95a442c49cf5542361eb8b0b0" title="Removes a Component from an Entity. " alt="" coords="225,63,369,105"/>
-<area shape="rect" id="node6" href="$class_atlas_1_1_entity_manager.html#ae064c512f318ebfe646f4ae1cd8259d7" title="Removes and destroys all the Components attached to a Entity. " alt="" coords="208,129,387,170"/>
-<area shape="rect" id="node3" href="$class_atlas_1_1_entity.html#a0b8ba9fab2d5f9598e623ca82bc2d2ef" title="Adds a Component to the Entity. " alt="" coords="693,12,883,39"/>
-<area shape="rect" id="node5" href="$class_atlas_1_1_entity.html#ad93e9c5ee10dce998589c54df83d6767" title="Removes a specified Component from the Entity. " alt="" coords="435,71,645,97"/>
-</map>

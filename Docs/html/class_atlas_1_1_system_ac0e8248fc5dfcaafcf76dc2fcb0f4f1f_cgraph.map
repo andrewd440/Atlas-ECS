@@ -1,6 +1,0 @@
-<map id="Atlas::System::checkInterest" name="Atlas::System::checkInterest">
-<area shape="rect" id="node2" href="$class_atlas_1_1_entity.html#a4436d15942d8452138a5b34db94a6a5c" title="Retrieves the System bits assigned to the Entity. " alt="" coords="257,5,445,32"/>
-<area shape="rect" id="node3" href="$class_atlas_1_1_entity.html#ad9209a60e395421878e04100792c3ae2" title="Retrieves the Component bits in use by the Entity. " alt="" coords="246,56,455,83"/>
-<area shape="rect" id="node4" href="$class_atlas_1_1_entity.html#aa06de1474978a96071f84deee7e17487" title="Retrieves the ID assigned to the Entity. " alt="" coords="285,107,417,133"/>
-<area shape="rect" id="node5" href="$class_atlas_1_1_entity.html#ae8abab851cbe7ebb59d7aeea54b59521" title="Sets a System bit to be assigned to the Entity. " alt="" coords="260,157,441,184"/>
-</map>
