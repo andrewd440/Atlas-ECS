@@ -120,7 +120,7 @@ Classes</h2></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Handle used for Components.  <a href="class_atlas_1_1_component_identifier.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_atlas_1_1_component_identifier_manager.html">ComponentIdentifierManager</a></td></tr>
-<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Used to assign a unique ID and Bit to a <a class="el" href="class_atlas_1_1_system.html">System</a> when added to the <a class="el" href="class_atlas_1_1_system_manager.html" title="A manager for all Systems that are used. ">SystemManager</a>.  <a href="class_atlas_1_1_component_identifier_manager.html#details">More...</a><br /></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Used to assign a unique ID and Bit to a <a class="el" href="class_atlas_1_1_system.html" title="Base class for all Systems. ">System</a> when added to the <a class="el" href="class_atlas_1_1_system_manager.html" title="A manager for all Systems that are used. ">SystemManager</a>.  <a href="class_atlas_1_1_component_identifier_manager.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_atlas_1_1_entity.html">Entity</a></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Used to represent any game object.  <a href="class_atlas_1_1_entity.html#details">More...</a><br /></td></tr>
@@ -135,9 +135,10 @@ Classes</h2></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Base class for objects not intended to be copied.  <a href="class_atlas_1_1_non_copyable.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_atlas_1_1_system.html">System</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Base class for all Systems.  <a href="class_atlas_1_1_system.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_atlas_1_1_system_bit_manager.html">SystemBitManager</a></td></tr>
-<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Used to distribute a unique bit identifier to each <a class="el" href="class_atlas_1_1_system.html">System</a> created.  <a href="class_atlas_1_1_system_bit_manager.html#details">More...</a><br /></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Used to distribute a unique bit identifier to each <a class="el" href="class_atlas_1_1_system.html" title="Base class for all Systems. ">System</a> created.  <a href="class_atlas_1_1_system_bit_manager.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_atlas_1_1_system_manager.html">SystemManager</a></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">A manager for all Systems that are used.  <a href="class_atlas_1_1_system_manager.html#details">More...</a><br /></td></tr>
@@ -163,7 +164,7 @@ Functions</h2></td></tr>
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="var-members"></a>
 Variables</h2></td></tr>
 <tr class="memitem:a3e8615510b03c6e4cef5402ce7328e25"><td class="memItemLeft" align="right" valign="top">const int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_atlas.html#a3e8615510b03c6e4cef5402ce7328e25">BITSIZE</a> = 32</td></tr>
-<tr class="memdesc:a3e8615510b03c6e4cef5402ce7328e25"><td class="mdescLeft">&#160;</td><td class="mdescRight">Standard size on bitsets used in <a class="el" href="namespace_atlas.html">Atlas</a>.  <a href="#a3e8615510b03c6e4cef5402ce7328e25">More...</a><br /></td></tr>
+<tr class="memdesc:a3e8615510b03c6e4cef5402ce7328e25"><td class="mdescLeft">&#160;</td><td class="mdescRight">Max size of Components used.  <a href="#a3e8615510b03c6e4cef5402ce7328e25">More...</a><br /></td></tr>
 <tr class="separator:a3e8615510b03c6e4cef5402ce7328e25"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Function Documentation</h2>
@@ -235,7 +236,7 @@ template&lt;typename T &gt; </div>
       </table>
 </div><div class="memdoc">
 
-<p>Standard size on bitsets used in <a class="el" href="namespace_atlas.html">Atlas</a>. </p>
+<p>Max size of Components used. </p>
 
 </div>
 </div>
@@ -245,7 +246,7 @@ template&lt;typename T &gt; </div>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="namespace_atlas.html">Atlas</a></li>
-    <li class="footer">Generated on Thu Jul 3 2014 16:12:06 for Atlas by
+    <li class="footer">Generated on Fri Jul 4 2014 13:59:50 for Atlas by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.7 </li>
   </ul>

@@ -141,43 +141,43 @@ $(document).ready(function(){initNavTree('_entity_8h_source.html','');});
 <div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;            mEntityManager.<a class="code" href="class_atlas_1_1_entity_manager.html#a5a4385e95a442c49cf5542361eb8b0b0">removeComponent</a>(*<span class="keyword">this</span>, ComponentIdentifierManager::getType&lt;Type&gt;());</div>
 <div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;        }</div>
 <div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;</div>
-<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;        <a class="code" href="class_atlas_1_1_entity.html#a72f875bc40c74779cd7410eb7caa9753">ID</a>                                  <a class="code" href="class_atlas_1_1_entity.html#a09c078fc7031931a46e86422855c7fa9">getID</a>() <span class="keyword">const</span>;</div>
-<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;        </div>
-<div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;        <span class="keywordtype">bool</span>                                        <a class="code" href="class_atlas_1_1_entity.html#a65f7c814743c3b4bb8de61da10a97e37">isActive</a>() <span class="keyword">const</span>;</div>
-<div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;</div>
-<div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;        <span class="keywordtype">void</span>                                        <a class="code" href="class_atlas_1_1_entity.html#a2938049a0af4d9c70b89d2426d52e03f">setActive</a>(<span class="keywordtype">bool</span> Flag);</div>
-<div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;</div>
-<div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160;        std::bitset&lt;BITSIZE&gt;                        <a class="code" href="class_atlas_1_1_entity.html#a31c092a3f817b0d5cd818f7bcd54a937">getComponentBits</a>() <span class="keyword">const</span>;</div>
-<div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160;</div>
-<div class="line"><a name="l00101"></a><span class="lineno">  101</span>&#160;        <span class="keywordtype">void</span>                                        <a class="code" href="class_atlas_1_1_entity.html#ae8abab851cbe7ebb59d7aeea54b59521">setSystemBit</a>(<span class="keyword">const</span> std::bitset&lt;BITSIZE&gt;&amp; Bit);</div>
-<div class="line"><a name="l00102"></a><span class="lineno">  102</span>&#160;</div>
-<div class="line"><a name="l00107"></a><span class="lineno">  107</span>&#160;        <span class="keywordtype">void</span>                                        <a class="code" href="class_atlas_1_1_entity.html#a78cfb58f5a85099d5533d5fd509248a0">removeSystemBit</a>(<span class="keyword">const</span> std::bitset&lt;BITSIZE&gt;&amp; Bit);</div>
-<div class="line"><a name="l00108"></a><span class="lineno">  108</span>&#160;</div>
-<div class="line"><a name="l00113"></a><span class="lineno">  113</span>&#160;        std::bitset&lt;BITSIZE&gt;                        <a class="code" href="class_atlas_1_1_entity.html#ad00c9fe089b79be16df443dc6bff4fd3">getSystemBits</a>() <span class="keyword">const</span>;</div>
-<div class="line"><a name="l00114"></a><span class="lineno">  114</span>&#160;</div>
-<div class="line"><a name="l00118"></a><span class="lineno">  118</span>&#160;        <span class="keywordtype">void</span>                                        <a class="code" href="class_atlas_1_1_entity.html#ad4c7b1eb2ace713aa9713031bdb58ab8">toString</a>() <span class="keyword">const</span>;</div>
-<div class="line"><a name="l00119"></a><span class="lineno">  119</span>&#160;</div>
-<div class="line"><a name="l00120"></a><span class="lineno">  120</span>&#160;    <span class="keyword">private</span>:</div>
-<div class="line"><a name="l00121"></a><span class="lineno"><a class="line" href="class_atlas_1_1_entity.html#a6f579cda6059d102e9074e11a27e0282">  121</a></span>&#160;        <span class="keyword">friend</span> <span class="keyword">class </span><a class="code" href="class_atlas_1_1_entity_manager.html">EntityManager</a>;</div>
-<div class="line"><a name="l00122"></a><span class="lineno">  122</span>&#160;</div>
-<div class="line"><a name="l00123"></a><span class="lineno">  123</span>&#160;        <a class="code" href="class_atlas_1_1_entity.html">Entity</a>(<a class="code" href="class_atlas_1_1_world.html">World</a>&amp; world, <a class="code" href="class_atlas_1_1_entity.html#a72f875bc40c74779cd7410eb7caa9753">ID</a> <span class="keywordtype">id</span>);    <span class="comment">// Only the EntityManager creates Entities</span></div>
+<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;        <a class="code" href="class_atlas_1_1_entity.html#a72f875bc40c74779cd7410eb7caa9753">ID</a>                                  <a class="code" href="class_atlas_1_1_entity.html#a09c078fc7031931a46e86422855c7fa9">getID</a>() <span class="keyword">const</span>;</div>
+<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;        </div>
+<div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;        <span class="keywordtype">bool</span>                                        <a class="code" href="class_atlas_1_1_entity.html#a65f7c814743c3b4bb8de61da10a97e37">isActive</a>() <span class="keyword">const</span>;</div>
+<div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;</div>
+<div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;        <span class="keywordtype">void</span>                                        <a class="code" href="class_atlas_1_1_entity.html#a2938049a0af4d9c70b89d2426d52e03f">setActive</a>(<span class="keywordtype">bool</span> Flag);</div>
+<div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160;</div>
+<div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160;        std::bitset&lt;BITSIZE&gt;                        <a class="code" href="class_atlas_1_1_entity.html#a31c092a3f817b0d5cd818f7bcd54a937">getComponentBits</a>() <span class="keyword">const</span>;</div>
+<div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160;</div>
+<div class="line"><a name="l00103"></a><span class="lineno">  103</span>&#160;        <span class="keywordtype">void</span>                                        <a class="code" href="class_atlas_1_1_entity.html#ae8abab851cbe7ebb59d7aeea54b59521">setSystemBit</a>(<span class="keyword">const</span> std::bitset&lt;BITSIZE&gt;&amp; Bit);</div>
+<div class="line"><a name="l00104"></a><span class="lineno">  104</span>&#160;</div>
+<div class="line"><a name="l00109"></a><span class="lineno">  109</span>&#160;        <span class="keywordtype">void</span>                                        <a class="code" href="class_atlas_1_1_entity.html#a78cfb58f5a85099d5533d5fd509248a0">removeSystemBit</a>(<span class="keyword">const</span> std::bitset&lt;BITSIZE&gt;&amp; Bit);</div>
+<div class="line"><a name="l00110"></a><span class="lineno">  110</span>&#160;</div>
+<div class="line"><a name="l00115"></a><span class="lineno">  115</span>&#160;        std::bitset&lt;BITSIZE&gt;                        <a class="code" href="class_atlas_1_1_entity.html#ad00c9fe089b79be16df443dc6bff4fd3">getSystemBits</a>() <span class="keyword">const</span>;</div>
+<div class="line"><a name="l00116"></a><span class="lineno">  116</span>&#160;</div>
+<div class="line"><a name="l00120"></a><span class="lineno">  120</span>&#160;        <span class="keywordtype">void</span>                                        <a class="code" href="class_atlas_1_1_entity.html#ad4c7b1eb2ace713aa9713031bdb58ab8">toString</a>() <span class="keyword">const</span>;</div>
+<div class="line"><a name="l00121"></a><span class="lineno">  121</span>&#160;</div>
+<div class="line"><a name="l00122"></a><span class="lineno">  122</span>&#160;    <span class="keyword">private</span>:</div>
+<div class="line"><a name="l00123"></a><span class="lineno"><a class="line" href="class_atlas_1_1_entity.html#a6f579cda6059d102e9074e11a27e0282">  123</a></span>&#160;        <span class="keyword">friend</span> <span class="keyword">class </span><a class="code" href="class_atlas_1_1_entity_manager.html">EntityManager</a>;</div>
 <div class="line"><a name="l00124"></a><span class="lineno">  124</span>&#160;</div>
-<div class="line"><a name="l00130"></a><span class="lineno">  130</span>&#160;        <span class="keywordtype">void</span>                                        setID(<a class="code" href="class_atlas_1_1_entity.html#a72f875bc40c74779cd7410eb7caa9753">ID</a> <a class="code" href="class_atlas_1_1_entity.html#a72f875bc40c74779cd7410eb7caa9753">ID</a>);</div>
-<div class="line"><a name="l00131"></a><span class="lineno">  131</span>&#160;</div>
-<div class="line"><a name="l00135"></a><span class="lineno">  135</span>&#160;        <span class="keywordtype">void</span>                                        reset();</div>
-<div class="line"><a name="l00136"></a><span class="lineno">  136</span>&#160;</div>
-<div class="line"><a name="l00142"></a><span class="lineno">  142</span>&#160;        <span class="keywordtype">void</span>                                        addComponentBit(<span class="keyword">const</span> std::bitset&lt;BITSIZE&gt;&amp; Bit);</div>
-<div class="line"><a name="l00143"></a><span class="lineno">  143</span>&#160;        </div>
-<div class="line"><a name="l00149"></a><span class="lineno">  149</span>&#160;        <span class="keywordtype">void</span>                                        removeComponentBit(<span class="keyword">const</span> std::bitset&lt;BITSIZE&gt;&amp; Bit);</div>
-<div class="line"><a name="l00150"></a><span class="lineno">  150</span>&#160;</div>
-<div class="line"><a name="l00151"></a><span class="lineno">  151</span>&#160;    <span class="keyword">private</span>:</div>
-<div class="line"><a name="l00152"></a><span class="lineno">  152</span>&#160;        <a class="code" href="class_atlas_1_1_entity.html#a72f875bc40c74779cd7410eb7caa9753">ID</a>                                  mID;</div>
-<div class="line"><a name="l00153"></a><span class="lineno">  153</span>&#160;        std::bitset&lt;BITSIZE&gt;                        mComponentBits;</div>
-<div class="line"><a name="l00154"></a><span class="lineno">  154</span>&#160;        std::bitset&lt;BITSIZE&gt;                        mSystemBits;</div>
-<div class="line"><a name="l00155"></a><span class="lineno">  155</span>&#160;        <a class="code" href="class_atlas_1_1_entity_manager.html">EntityManager</a>&amp;                              mEntityManager;</div>
-<div class="line"><a name="l00156"></a><span class="lineno">  156</span>&#160;        <span class="keywordtype">bool</span>                                        mIsActive;</div>
-<div class="line"><a name="l00157"></a><span class="lineno">  157</span>&#160;    };</div>
-<div class="line"><a name="l00158"></a><span class="lineno">  158</span>&#160;}</div>
+<div class="line"><a name="l00125"></a><span class="lineno">  125</span>&#160;        <a class="code" href="class_atlas_1_1_entity.html">Entity</a>(<a class="code" href="class_atlas_1_1_world.html">World</a>&amp; world, <a class="code" href="class_atlas_1_1_entity.html#a72f875bc40c74779cd7410eb7caa9753">ID</a> <span class="keywordtype">id</span>);    <span class="comment">// Only the EntityManager creates Entities</span></div>
+<div class="line"><a name="l00126"></a><span class="lineno">  126</span>&#160;</div>
+<div class="line"><a name="l00132"></a><span class="lineno">  132</span>&#160;        <span class="keywordtype">void</span>                                        setID(<a class="code" href="class_atlas_1_1_entity.html#a72f875bc40c74779cd7410eb7caa9753">ID</a> <a class="code" href="class_atlas_1_1_entity.html#a72f875bc40c74779cd7410eb7caa9753">ID</a>);</div>
+<div class="line"><a name="l00133"></a><span class="lineno">  133</span>&#160;</div>
+<div class="line"><a name="l00137"></a><span class="lineno">  137</span>&#160;        <span class="keywordtype">void</span>                                        reset();</div>
+<div class="line"><a name="l00138"></a><span class="lineno">  138</span>&#160;</div>
+<div class="line"><a name="l00144"></a><span class="lineno">  144</span>&#160;        <span class="keywordtype">void</span>                                        addComponentBit(<span class="keyword">const</span> std::bitset&lt;BITSIZE&gt;&amp; Bit);</div>
+<div class="line"><a name="l00145"></a><span class="lineno">  145</span>&#160;        </div>
+<div class="line"><a name="l00151"></a><span class="lineno">  151</span>&#160;        <span class="keywordtype">void</span>                                        removeComponentBit(<span class="keyword">const</span> std::bitset&lt;BITSIZE&gt;&amp; Bit);</div>
+<div class="line"><a name="l00152"></a><span class="lineno">  152</span>&#160;</div>
+<div class="line"><a name="l00153"></a><span class="lineno">  153</span>&#160;    <span class="keyword">private</span>:</div>
+<div class="line"><a name="l00154"></a><span class="lineno">  154</span>&#160;        <a class="code" href="class_atlas_1_1_entity.html#a72f875bc40c74779cd7410eb7caa9753">ID</a>                                  mID;</div>
+<div class="line"><a name="l00155"></a><span class="lineno">  155</span>&#160;        std::bitset&lt;BITSIZE&gt;                        mComponentBits;</div>
+<div class="line"><a name="l00156"></a><span class="lineno">  156</span>&#160;        std::bitset&lt;BITSIZE&gt;                        mSystemBits;</div>
+<div class="line"><a name="l00157"></a><span class="lineno">  157</span>&#160;        <a class="code" href="class_atlas_1_1_entity_manager.html">EntityManager</a>&amp;                              mEntityManager;</div>
+<div class="line"><a name="l00158"></a><span class="lineno">  158</span>&#160;        <span class="keywordtype">bool</span>                                        mIsActive;</div>
+<div class="line"><a name="l00159"></a><span class="lineno">  159</span>&#160;    };</div>
+<div class="line"><a name="l00160"></a><span class="lineno">  160</span>&#160;}</div>
 <div class="ttc" id="class_atlas_1_1_entity_html_a09c078fc7031931a46e86422855c7fa9"><div class="ttname"><a href="class_atlas_1_1_entity.html#a09c078fc7031931a46e86422855c7fa9">Atlas::Entity::getID</a></div><div class="ttdeci">ID getID() const </div><div class="ttdoc">Retrieves the ID assigned to the Entity. </div></div>
 <div class="ttc" id="class_atlas_1_1_entity_html_a31c092a3f817b0d5cd818f7bcd54a937"><div class="ttname"><a href="class_atlas_1_1_entity.html#a31c092a3f817b0d5cd818f7bcd54a937">Atlas::Entity::getComponentBits</a></div><div class="ttdeci">std::bitset&lt; BITSIZE &gt; getComponentBits() const </div><div class="ttdoc">Retrieves the Component bits in use by the Entity. </div></div>
 <div class="ttc" id="class_atlas_1_1_entity_manager_html_a5a4385e95a442c49cf5542361eb8b0b0"><div class="ttname"><a href="class_atlas_1_1_entity_manager.html#a5a4385e95a442c49cf5542361eb8b0b0">Atlas::EntityManager::removeComponent</a></div><div class="ttdeci">void removeComponent(Entity &amp;entity, const ComponentIdentifier &amp;componentIdentifier)</div><div class="ttdoc">Removes a Component from an Entity. </div></div>
@@ -210,7 +210,7 @@ $(document).ready(function(){initNavTree('_entity_8h_source.html','');});
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_deab0274b0ce5afb2d8b2900fd55861b.html">PerforceWorkspace</a></li><li class="navelem"><a class="el" href="dir_fe6635c7fdf95c26f57ca73d06786c89.html">Drew-DeskPC</a></li><li class="navelem"><a class="el" href="dir_6115c5eb071306b4e2f9a9c189cd7297.html">Atlas</a></li><li class="navelem"><a class="el" href="dir_ef0c7481dbf7372e458ee2a94cfb5d13.html">EntityComponentTest</a></li><li class="navelem"><a class="el" href="dir_15676b1bfeeedce8a1e6d3ac8e585651.html">include</a></li><li class="navelem"><a class="el" href="_entity_8h.html">Entity.h</a></li>
-    <li class="footer">Generated on Thu Jul 3 2014 16:12:06 for Atlas by
+    <li class="footer">Generated on Fri Jul 4 2014 13:59:50 for Atlas by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.7 </li>
   </ul>

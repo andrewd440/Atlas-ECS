@@ -112,7 +112,7 @@ $(document).ready(function(){initNavTree('class_atlas_1_1_system_bit_manager.htm
 </div><!--header-->
 <div class="contents">
 
-<p>Used to distribute a unique bit identifier to each <a class="el" href="class_atlas_1_1_system.html">System</a> created.  
+<p>Used to distribute a unique bit identifier to each <a class="el" href="class_atlas_1_1_system.html" title="Base class for all Systems. ">System</a> created.  
  <a href="class_atlas_1_1_system_bit_manager.html#details">More...</a></p>
 
 <p><code>#include &lt;<a class="el" href="_system_bit_manager_8h_source.html">SystemBitManager.h</a>&gt;</code></p>
@@ -134,11 +134,11 @@ Collaboration diagram for Atlas::SystemBitManager:</div>
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-static-methods"></a>
 Static Public Member Functions</h2></td></tr>
 <tr class="memitem:a6047c4b1a1258e52c98fbe60e45da669"><td class="memItemLeft" align="right" valign="top">static std::bitset&lt; <a class="el" href="namespace_atlas.html#a3e8615510b03c6e4cef5402ce7328e25">BITSIZE</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_atlas_1_1_system_bit_manager.html#a6047c4b1a1258e52c98fbe60e45da669">getBitsFor</a> (const std::type_index &amp;type)</td></tr>
-<tr class="memdesc:a6047c4b1a1258e52c98fbe60e45da669"><td class="mdescLeft">&#160;</td><td class="mdescRight">Retrieves the bits for a <a class="el" href="class_atlas_1_1_system.html">System</a>.  <a href="#a6047c4b1a1258e52c98fbe60e45da669">More...</a><br /></td></tr>
+<tr class="memdesc:a6047c4b1a1258e52c98fbe60e45da669"><td class="mdescLeft">&#160;</td><td class="mdescRight">Retrieves the bits for a <a class="el" href="class_atlas_1_1_system.html" title="Base class for all Systems. ">System</a>.  <a href="#a6047c4b1a1258e52c98fbe60e45da669">More...</a><br /></td></tr>
 <tr class="separator:a6047c4b1a1258e52c98fbe60e45da669"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a5f4d7809cbd9dbc9106266264129c0ee"><td class="memTemplParams" colspan="2">template&lt;typename T &gt; </td></tr>
 <tr class="memitem:a5f4d7809cbd9dbc9106266264129c0ee"><td class="memTemplItemLeft" align="right" valign="top">static std::bitset&lt; <a class="el" href="namespace_atlas.html#a3e8615510b03c6e4cef5402ce7328e25">BITSIZE</a> &gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="class_atlas_1_1_system_bit_manager.html#a5f4d7809cbd9dbc9106266264129c0ee">getBitsFor</a> (const T *type)</td></tr>
-<tr class="memdesc:a5f4d7809cbd9dbc9106266264129c0ee"><td class="mdescLeft">&#160;</td><td class="mdescRight">Retrieves the bits for a <a class="el" href="class_atlas_1_1_system.html">System</a>.  <a href="#a5f4d7809cbd9dbc9106266264129c0ee">More...</a><br /></td></tr>
+<tr class="memdesc:a5f4d7809cbd9dbc9106266264129c0ee"><td class="mdescLeft">&#160;</td><td class="mdescRight">Retrieves the bits for a <a class="el" href="class_atlas_1_1_system.html" title="Base class for all Systems. ">System</a>.  <a href="#a5f4d7809cbd9dbc9106266264129c0ee">More...</a><br /></td></tr>
 <tr class="separator:a5f4d7809cbd9dbc9106266264129c0ee"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="inherited"></a>
@@ -151,7 +151,7 @@ Additional Inherited Members</h2></td></tr>
 <tr class="separator:acf9e425eb01db926bc12103cdef9f9c3 inherit pub_methods_class_atlas_1_1_non_copyable"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock"><p>Used to distribute a unique bit identifier to each <a class="el" href="class_atlas_1_1_system.html">System</a> created. </p>
+<div class="textblock"><p>Used to distribute a unique bit identifier to each <a class="el" href="class_atlas_1_1_system.html" title="Base class for all Systems. ">System</a> created. </p>
 </div><h2 class="groupheader">Member Function Documentation</h2>
 <a class="anchor" id="a6047c4b1a1258e52c98fbe60e45da669"></a>
 <div class="memitem">
@@ -175,14 +175,15 @@ Additional Inherited Members</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Retrieves the bits for a <a class="el" href="class_atlas_1_1_system.html">System</a>. </p>
-<dl class="params"><dt>Parameters</dt><dd>
+<p>Retrieves the bits for a <a class="el" href="class_atlas_1_1_system.html" title="Base class for all Systems. ">System</a>. </p>
+<p>Usage Example: </p><div class="fragment"><div class="line">system.setSystemBits(<a class="code" href="class_atlas_1_1_system_bit_manager.html#a6047c4b1a1258e52c98fbe60e45da669">Atlas::SystemBitManager::getBitsFor</a>(<span class="keyword">typeid</span>(HealthSystem)));</div>
+</div><!-- fragment --> <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">type</td><td>- the <a class="el" href="class_atlas_1_1_system.html">System</a> of interest </td></tr>
+    <tr><td class="paramname">type</td><td>- the <a class="el" href="class_atlas_1_1_system.html" title="Base class for all Systems. ">System</a> of interest </td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd>a bitset containing the <a class="el" href="class_atlas_1_1_system.html">System</a> bit </dd></dl>
+<dl class="section return"><dt>Returns</dt><dd>A bitset containing the <a class="el" href="class_atlas_1_1_system.html" title="Base class for all Systems. ">System</a> bit </dd></dl>
 
 <p><div class="dynheader">
 Here is the caller graph for this function:</div>
@@ -219,14 +220,15 @@ template&lt;typename T &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p>Retrieves the bits for a <a class="el" href="class_atlas_1_1_system.html">System</a>. </p>
-<dl class="params"><dt>Parameters</dt><dd>
+<p>Retrieves the bits for a <a class="el" href="class_atlas_1_1_system.html" title="Base class for all Systems. ">System</a>. </p>
+<p>Usage Example: </p><div class="fragment"><div class="line">system.setSystemBits(Atlas::SystemBitManager::getBitsFor&lt;HealthSystem&gt;());</div>
+</div><!-- fragment --> <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">type</td><td>- pointer to a <a class="el" href="class_atlas_1_1_system.html">System</a> </td></tr>
+    <tr><td class="paramname">type</td><td>- pointer to a <a class="el" href="class_atlas_1_1_system.html" title="Base class for all Systems. ">System</a> </td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd>a bitset containing the <a class="el" href="class_atlas_1_1_system.html">System</a> bit </dd></dl>
+<dl class="section return"><dt>Returns</dt><dd>A bitset containing the <a class="el" href="class_atlas_1_1_system.html" title="Base class for all Systems. ">System</a> bit </dd></dl>
 
 <p><div class="dynheader">
 Here is the call graph for this function:</div>
@@ -248,7 +250,7 @@ Here is the call graph for this function:</div>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="namespace_atlas.html">Atlas</a></li><li class="navelem"><a class="el" href="class_atlas_1_1_system_bit_manager.html">SystemBitManager</a></li>
-    <li class="footer">Generated on Thu Jul 3 2014 16:12:07 for Atlas by
+    <li class="footer">Generated on Fri Jul 4 2014 13:59:51 for Atlas by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.7 </li>
   </ul>

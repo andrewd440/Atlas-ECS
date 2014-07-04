@@ -6,5 +6,5 @@ var class_atlas_1_1_world =
     [ "getEntityManager", "class_atlas_1_1_world.html#a8d2d401ccfa45f2683af3bf8d7361b03", null ],
     [ "getGroupManager", "class_atlas_1_1_world.html#a55102ac009c8088eba278663a8ad8e6c", null ],
     [ "getSystemManager", "class_atlas_1_1_world.html#a14a8ed2994868269c5fb9ceb6388e087", null ],
-    [ "update", "class_atlas_1_1_world.html#ae16b68c0aae69c139713c036a957a86c", null ]
+    [ "update", "class_atlas_1_1_world.html#a64746dbb4e02366bb3208f5cfb69f5f9", null ]
 ];

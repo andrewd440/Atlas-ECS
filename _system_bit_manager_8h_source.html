@@ -117,24 +117,24 @@ $(document).ready(function(){initNavTree('_system_bit_manager_8h_source.html',''
 <div class="line"><a name="l00013"></a><span class="lineno"><a class="line" href="class_atlas_1_1_system_bit_manager.html">   13</a></span>&#160;    <span class="keyword">class </span><a class="code" href="class_atlas_1_1_system_bit_manager.html">SystemBitManager</a> : <span class="keyword">public</span> <a class="code" href="class_atlas_1_1_non_copyable.html">NonCopyable</a></div>
 <div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;    {</div>
 <div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;    <span class="keyword">public</span>:</div>
-<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;        <span class="keyword">static</span> std::bitset&lt;BITSIZE&gt;                     <a class="code" href="class_atlas_1_1_system_bit_manager.html#a6047c4b1a1258e52c98fbe60e45da669">getBitsFor</a>(<span class="keyword">const</span> std::type_index&amp; type);</div>
-<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;</div>
-<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;        <span class="keyword">template</span> &lt;<span class="keyword">typename</span> T&gt;</div>
-<div class="line"><a name="l00029"></a><span class="lineno"><a class="line" href="class_atlas_1_1_system_bit_manager.html#a5f4d7809cbd9dbc9106266264129c0ee">   29</a></span>&#160;        <span class="keyword">static</span> std::bitset&lt;BITSIZE&gt;                     <a class="code" href="class_atlas_1_1_system_bit_manager.html#a5f4d7809cbd9dbc9106266264129c0ee">getBitsFor</a>(<span class="keyword">const</span> T* type)</div>
-<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;        {</div>
-<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;            <span class="keywordflow">return</span> <a class="code" href="class_atlas_1_1_system_bit_manager.html#a6047c4b1a1258e52c98fbe60e45da669">getBitsFor</a>(<span class="keyword">typeid</span>(*type));</div>
-<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;        }</div>
-<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;</div>
-<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;</div>
-<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;    <span class="keyword">private</span>:</div>
-<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;        <a class="code" href="class_atlas_1_1_system_bit_manager.html">SystemBitManager</a>() = <span class="keywordflow">default</span>;       <span class="comment">//Not meant for instantiation</span></div>
-<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;</div>
-<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;        <span class="keyword">static</span> std::unordered_map&lt;std::type_index, std::bitset&lt;BITSIZE&gt;&gt;    mSystemBitMap;</div>
-<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;        <span class="keyword">static</span> std::bitset&lt;BITSIZE&gt;                                         mNextBit;</div>
-<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;    };</div>
-<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;}</div>
+<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;        <span class="keyword">static</span> std::bitset&lt;BITSIZE&gt;                     <a class="code" href="class_atlas_1_1_system_bit_manager.html#a6047c4b1a1258e52c98fbe60e45da669">getBitsFor</a>(<span class="keyword">const</span> std::type_index&amp; type);</div>
+<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;</div>
+<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;        <span class="keyword">template</span> &lt;<span class="keyword">typename</span> T&gt;</div>
+<div class="line"><a name="l00039"></a><span class="lineno"><a class="line" href="class_atlas_1_1_system_bit_manager.html#a5f4d7809cbd9dbc9106266264129c0ee">   39</a></span>&#160;        <span class="keyword">static</span> std::bitset&lt;BITSIZE&gt;                     <a class="code" href="class_atlas_1_1_system_bit_manager.html#a5f4d7809cbd9dbc9106266264129c0ee">getBitsFor</a>(<span class="keyword">const</span> T* type)</div>
+<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;        {</div>
+<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;            <span class="keywordflow">return</span> <a class="code" href="class_atlas_1_1_system_bit_manager.html#a6047c4b1a1258e52c98fbe60e45da669">getBitsFor</a>(<span class="keyword">typeid</span>(*type));</div>
+<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;        }</div>
+<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;</div>
+<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;</div>
+<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;    <span class="keyword">private</span>:</div>
+<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;        <a class="code" href="class_atlas_1_1_system_bit_manager.html">SystemBitManager</a>() = <span class="keywordflow">default</span>;       <span class="comment">//Not meant for instantiation</span></div>
+<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;</div>
+<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;        <span class="keyword">static</span> std::unordered_map&lt;std::type_index, std::bitset&lt;BITSIZE&gt;&gt;    mSystemBitMap;</div>
+<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;        <span class="keyword">static</span> std::bitset&lt;BITSIZE&gt;                                         mNextBit;</div>
+<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;    };</div>
+<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;}</div>
 <div class="ttc" id="_non_copyable_8h_html"><div class="ttname"><a href="_non_copyable_8h.html">NonCopyable.h</a></div></div>
-<div class="ttc" id="class_atlas_1_1_system_bit_manager_html_a5f4d7809cbd9dbc9106266264129c0ee"><div class="ttname"><a href="class_atlas_1_1_system_bit_manager.html#a5f4d7809cbd9dbc9106266264129c0ee">Atlas::SystemBitManager::getBitsFor</a></div><div class="ttdeci">static std::bitset&lt; BITSIZE &gt; getBitsFor(const T *type)</div><div class="ttdoc">Retrieves the bits for a System. </div><div class="ttdef"><b>Definition:</b> SystemBitManager.h:29</div></div>
+<div class="ttc" id="class_atlas_1_1_system_bit_manager_html_a5f4d7809cbd9dbc9106266264129c0ee"><div class="ttname"><a href="class_atlas_1_1_system_bit_manager.html#a5f4d7809cbd9dbc9106266264129c0ee">Atlas::SystemBitManager::getBitsFor</a></div><div class="ttdeci">static std::bitset&lt; BITSIZE &gt; getBitsFor(const T *type)</div><div class="ttdoc">Retrieves the bits for a System. </div><div class="ttdef"><b>Definition:</b> SystemBitManager.h:39</div></div>
 <div class="ttc" id="_bitsize_8h_html"><div class="ttname"><a href="_bitsize_8h.html">Bitsize.h</a></div></div>
 <div class="ttc" id="class_atlas_1_1_system_bit_manager_html_a6047c4b1a1258e52c98fbe60e45da669"><div class="ttname"><a href="class_atlas_1_1_system_bit_manager.html#a6047c4b1a1258e52c98fbe60e45da669">Atlas::SystemBitManager::getBitsFor</a></div><div class="ttdeci">static std::bitset&lt; BITSIZE &gt; getBitsFor(const std::type_index &amp;type)</div><div class="ttdoc">Retrieves the bits for a System. </div></div>
 <div class="ttc" id="class_atlas_1_1_system_bit_manager_html"><div class="ttname"><a href="class_atlas_1_1_system_bit_manager.html">Atlas::SystemBitManager</a></div><div class="ttdoc">Used to distribute a unique bit identifier to each System created. </div><div class="ttdef"><b>Definition:</b> SystemBitManager.h:13</div></div>
@@ -145,7 +145,7 @@ $(document).ready(function(){initNavTree('_system_bit_manager_8h_source.html',''
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_deab0274b0ce5afb2d8b2900fd55861b.html">PerforceWorkspace</a></li><li class="navelem"><a class="el" href="dir_fe6635c7fdf95c26f57ca73d06786c89.html">Drew-DeskPC</a></li><li class="navelem"><a class="el" href="dir_6115c5eb071306b4e2f9a9c189cd7297.html">Atlas</a></li><li class="navelem"><a class="el" href="dir_ef0c7481dbf7372e458ee2a94cfb5d13.html">EntityComponentTest</a></li><li class="navelem"><a class="el" href="dir_15676b1bfeeedce8a1e6d3ac8e585651.html">include</a></li><li class="navelem"><a class="el" href="_system_bit_manager_8h.html">SystemBitManager.h</a></li>
-    <li class="footer">Generated on Thu Jul 3 2014 16:12:06 for Atlas by
+    <li class="footer">Generated on Fri Jul 4 2014 13:59:50 for Atlas by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.7 </li>
   </ul>

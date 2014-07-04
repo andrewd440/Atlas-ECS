@@ -119,7 +119,7 @@ $(document).ready(function(){initNavTree('_world_8h_source.html','');});
 <div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;    <span class="keyword">public</span>:</div>
 <div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;        <a class="code" href="class_atlas_1_1_world.html#a26c2ae61603348adebee181274b3c4f2">World</a>();</div>
 <div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;</div>
-<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;        <span class="keywordtype">void</span>                                                    <a class="code" href="class_atlas_1_1_world.html#ae16b68c0aae69c139713c036a957a86c">update</a>(<span class="keywordtype">float</span> dt);</div>
+<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;        <span class="keyword">virtual</span> <span class="keywordtype">void</span>                                            <a class="code" href="class_atlas_1_1_world.html#a64746dbb4e02366bb3208f5cfb69f5f9">update</a>(<span class="keywordtype">float</span> dt);</div>
 <div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;</div>
 <div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;        <a class="code" href="class_atlas_1_1_entity.html">Entity</a>&amp;                                                 <a class="code" href="class_atlas_1_1_world.html#a48402b7e76046282f63700b3aadb02bd">createEntity</a>();</div>
 <div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;</div>
@@ -138,7 +138,6 @@ $(document).ready(function(){initNavTree('_world_8h_source.html','');});
 <div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;    };</div>
 <div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;}</div>
 <div class="ttc" id="class_atlas_1_1_world_html_a26c2ae61603348adebee181274b3c4f2"><div class="ttname"><a href="class_atlas_1_1_world.html#a26c2ae61603348adebee181274b3c4f2">Atlas::World::World</a></div><div class="ttdeci">World()</div><div class="ttdoc">Default constructor. </div></div>
-<div class="ttc" id="class_atlas_1_1_world_html_ae16b68c0aae69c139713c036a957a86c"><div class="ttname"><a href="class_atlas_1_1_world.html#ae16b68c0aae69c139713c036a957a86c">Atlas::World::update</a></div><div class="ttdeci">void update(float dt)</div><div class="ttdoc">Updates the World. </div></div>
 <div class="ttc" id="class_atlas_1_1_system_manager_html"><div class="ttname"><a href="class_atlas_1_1_system_manager.html">Atlas::SystemManager</a></div><div class="ttdoc">A manager for all Systems that are used. </div><div class="ttdef"><b>Definition:</b> SystemManager.h:14</div></div>
 <div class="ttc" id="class_atlas_1_1_world_html_a33e8c4c90c6cf5309251aa1ac1700107"><div class="ttname"><a href="class_atlas_1_1_world.html#a33e8c4c90c6cf5309251aa1ac1700107">Atlas::World::getEntity</a></div><div class="ttdeci">Entity &amp; getEntity(Entity::ID id) const </div><div class="ttdoc">Retrieves an Entity. </div></div>
 <div class="ttc" id="class_atlas_1_1_entity_html_a72f875bc40c74779cd7410eb7caa9753"><div class="ttname"><a href="class_atlas_1_1_entity.html#a72f875bc40c74779cd7410eb7caa9753">Atlas::Entity::ID</a></div><div class="ttdeci">unsigned int ID</div><div class="ttdoc">ID type for an Entity. </div><div class="ttdef"><b>Definition:</b> Entity.h:22</div></div>
@@ -147,6 +146,7 @@ $(document).ready(function(){initNavTree('_world_8h_source.html','');});
 <div class="ttc" id="class_atlas_1_1_world_html_a8d2d401ccfa45f2683af3bf8d7361b03"><div class="ttname"><a href="class_atlas_1_1_world.html#a8d2d401ccfa45f2683af3bf8d7361b03">Atlas::World::getEntityManager</a></div><div class="ttdeci">EntityManager &amp; getEntityManager()</div><div class="ttdoc">Retrieves the EntityManager. </div></div>
 <div class="ttc" id="_group_manager_8h_html"><div class="ttname"><a href="_group_manager_8h.html">GroupManager.h</a></div></div>
 <div class="ttc" id="class_atlas_1_1_entity_manager_html"><div class="ttname"><a href="class_atlas_1_1_entity_manager.html">Atlas::EntityManager</a></div><div class="ttdoc">Manages all Entities and Components within the a World. </div><div class="ttdef"><b>Definition:</b> EntityManager.h:19</div></div>
+<div class="ttc" id="class_atlas_1_1_world_html_a64746dbb4e02366bb3208f5cfb69f5f9"><div class="ttname"><a href="class_atlas_1_1_world.html#a64746dbb4e02366bb3208f5cfb69f5f9">Atlas::World::update</a></div><div class="ttdeci">virtual void update(float dt)</div><div class="ttdoc">Updates the EntityManager and SystemManager. </div></div>
 <div class="ttc" id="class_atlas_1_1_entity_html"><div class="ttname"><a href="class_atlas_1_1_entity.html">Atlas::Entity</a></div><div class="ttdoc">Used to represent any game object. </div><div class="ttdef"><b>Definition:</b> Entity.h:18</div></div>
 <div class="ttc" id="class_atlas_1_1_world_html_a55102ac009c8088eba278663a8ad8e6c"><div class="ttname"><a href="class_atlas_1_1_world.html#a55102ac009c8088eba278663a8ad8e6c">Atlas::World::getGroupManager</a></div><div class="ttdeci">GroupManager &amp; getGroupManager()</div><div class="ttdoc">Retrieves the GroupManager. </div></div>
 <div class="ttc" id="_entity_manager_8h_html"><div class="ttname"><a href="_entity_manager_8h.html">EntityManager.h</a></div></div>
@@ -159,7 +159,7 @@ $(document).ready(function(){initNavTree('_world_8h_source.html','');});
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_deab0274b0ce5afb2d8b2900fd55861b.html">PerforceWorkspace</a></li><li class="navelem"><a class="el" href="dir_fe6635c7fdf95c26f57ca73d06786c89.html">Drew-DeskPC</a></li><li class="navelem"><a class="el" href="dir_6115c5eb071306b4e2f9a9c189cd7297.html">Atlas</a></li><li class="navelem"><a class="el" href="dir_ef0c7481dbf7372e458ee2a94cfb5d13.html">EntityComponentTest</a></li><li class="navelem"><a class="el" href="dir_15676b1bfeeedce8a1e6d3ac8e585651.html">include</a></li><li class="navelem"><a class="el" href="_world_8h.html">World.h</a></li>
-    <li class="footer">Generated on Thu Jul 3 2014 16:12:06 for Atlas by
+    <li class="footer">Generated on Fri Jul 4 2014 13:59:50 for Atlas by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.7 </li>
   </ul>

@@ -122,9 +122,9 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a26c2ae61603348adebee181274b3c4f2"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_atlas_1_1_world.html#a26c2ae61603348adebee181274b3c4f2">World</a> ()</td></tr>
 <tr class="memdesc:a26c2ae61603348adebee181274b3c4f2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Default constructor.  <a href="#a26c2ae61603348adebee181274b3c4f2">More...</a><br /></td></tr>
 <tr class="separator:a26c2ae61603348adebee181274b3c4f2"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ae16b68c0aae69c139713c036a957a86c"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_atlas_1_1_world.html#ae16b68c0aae69c139713c036a957a86c">update</a> (float dt)</td></tr>
-<tr class="memdesc:ae16b68c0aae69c139713c036a957a86c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Updates the <a class="el" href="class_atlas_1_1_world.html" title="Represents the game world. ">World</a>.  <a href="#ae16b68c0aae69c139713c036a957a86c">More...</a><br /></td></tr>
-<tr class="separator:ae16b68c0aae69c139713c036a957a86c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a64746dbb4e02366bb3208f5cfb69f5f9"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_atlas_1_1_world.html#a64746dbb4e02366bb3208f5cfb69f5f9">update</a> (float dt)</td></tr>
+<tr class="memdesc:a64746dbb4e02366bb3208f5cfb69f5f9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Updates the <a class="el" href="class_atlas_1_1_entity_manager.html" title="Manages all Entities and Components within the a World. ">EntityManager</a> and <a class="el" href="class_atlas_1_1_system_manager.html" title="A manager for all Systems that are used. ">SystemManager</a>.  <a href="#a64746dbb4e02366bb3208f5cfb69f5f9">More...</a><br /></td></tr>
+<tr class="separator:a64746dbb4e02366bb3208f5cfb69f5f9"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a48402b7e76046282f63700b3aadb02bd"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_atlas_1_1_entity.html">Entity</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_atlas_1_1_world.html#a48402b7e76046282f63700b3aadb02bd">createEntity</a> ()</td></tr>
 <tr class="memdesc:a48402b7e76046282f63700b3aadb02bd"><td class="mdescLeft">&#160;</td><td class="mdescRight">Creates an empty <a class="el" href="class_atlas_1_1_entity.html" title="Used to represent any game object. ">Entity</a>.  <a href="#a48402b7e76046282f63700b3aadb02bd">More...</a><br /></td></tr>
 <tr class="separator:a48402b7e76046282f63700b3aadb02bd"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -256,21 +256,29 @@ Public Member Functions</h2></td></tr>
 
 </div>
 </div>
-<a class="anchor" id="ae16b68c0aae69c139713c036a957a86c"></a>
+<a class="anchor" id="a64746dbb4e02366bb3208f5cfb69f5f9"></a>
 <div class="memitem">
 <div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">void Atlas::World::update </td>
+          <td class="memname">virtual void Atlas::World::update </td>
           <td>(</td>
           <td class="paramtype">float&#160;</td>
           <td class="paramname"><em>dt</em></td><td>)</td>
           <td></td>
         </tr>
       </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
 </div><div class="memdoc">
 
-<p>Updates the <a class="el" href="class_atlas_1_1_world.html" title="Represents the game world. ">World</a>. </p>
+<p>Updates the <a class="el" href="class_atlas_1_1_entity_manager.html" title="Manages all Entities and Components within the a World. ">EntityManager</a> and <a class="el" href="class_atlas_1_1_system_manager.html" title="A manager for all Systems that are used. ">SystemManager</a>. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">dt</td><td>- update time </td></tr>
@@ -289,7 +297,7 @@ Public Member Functions</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="namespace_atlas.html">Atlas</a></li><li class="navelem"><a class="el" href="class_atlas_1_1_world.html">World</a></li>
-    <li class="footer">Generated on Thu Jul 3 2014 16:12:07 for Atlas by
+    <li class="footer">Generated on Fri Jul 4 2014 13:59:51 for Atlas by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.7 </li>
   </ul>

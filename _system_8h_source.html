@@ -116,9 +116,6 @@ $(document).ready(function(){initNavTree('_system_8h_source.html','');});
 <div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;</div>
 <div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;<span class="keyword">namespace </span>Atlas</div>
 <div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;{</div>
-<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;    <span class="comment">/*</span></div>
-<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;<span class="comment">    * Base class for all Systems</span></div>
-<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;<span class="comment">    */</span></div>
 <div class="line"><a name="l00015"></a><span class="lineno"><a class="line" href="class_atlas_1_1_system.html">   15</a></span>&#160;    <span class="keyword">class </span><a class="code" href="class_atlas_1_1_system.html">System</a> : <span class="keyword">public</span> <a class="code" href="class_atlas_1_1_non_copyable.html">NonCopyable</a></div>
 <div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;    {</div>
 <div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;    <span class="keyword">public</span>:</div>
@@ -136,40 +133,40 @@ $(document).ready(function(){initNavTree('_system_8h_source.html','');});
 <div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;        <span class="keywordtype">void</span>                                                <a class="code" href="class_atlas_1_1_system.html#aff064bdd82af176300b2831b86cd68f2">toString</a>();</div>
 <div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;</div>
 <div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;    <span class="keyword">protected</span>:</div>
-<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;        <span class="keyword">template</span> &lt;<span class="keyword">typename</span> T&gt;</div>
-<div class="line"><a name="l00059"></a><span class="lineno"><a class="line" href="class_atlas_1_1_system.html#a1f5a99c13450255196ffd3951d37dba2">   59</a></span>&#160;        <span class="keywordtype">void</span>                                                <a class="code" href="class_atlas_1_1_system.html#a1f5a99c13450255196ffd3951d37dba2">addComponentType</a>()</div>
-<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;        {</div>
-<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;            mTypeBits |= ComponentIdentifierManager::getBits&lt;T&gt;();</div>
-<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;        }</div>
-<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;</div>
-<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;        std::bitset&lt;BITSIZE&gt;                                <a class="code" href="class_atlas_1_1_system.html#a59f8265beba8a9aa634069e09fbb48c9">getTypeBits</a>() <span class="keyword">const</span>;</div>
-<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;</div>
-<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;        <span class="keyword">const</span> std::vector&lt;Entity::ID&gt;&amp;              <a class="code" href="class_atlas_1_1_system.html#a9261d2971364794652edd65407030946">getEntities</a>() <span class="keyword">const</span>;</div>
+<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;        <span class="keyword">template</span> &lt;<span class="keyword">typename</span> T&gt;</div>
+<div class="line"><a name="l00064"></a><span class="lineno"><a class="line" href="class_atlas_1_1_system.html#a1f5a99c13450255196ffd3951d37dba2">   64</a></span>&#160;        <span class="keywordtype">void</span>                                                <a class="code" href="class_atlas_1_1_system.html#a1f5a99c13450255196ffd3951d37dba2">addComponentType</a>()</div>
+<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;        {</div>
+<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;            mTypeBits |= ComponentIdentifierManager::getBits&lt;T&gt;();</div>
+<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;        }</div>
+<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;</div>
+<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;        std::bitset&lt;BITSIZE&gt;                                <a class="code" href="class_atlas_1_1_system.html#a59f8265beba8a9aa634069e09fbb48c9">getTypeBits</a>() <span class="keyword">const</span>;</div>
 <div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;</div>
-<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;        <a class="code" href="class_atlas_1_1_world.html">World</a>&amp;                                              <a class="code" href="class_atlas_1_1_system.html#a9fb4808effbe3bdcc1738479d464503d">getWorld</a>() <span class="keyword">const</span>;</div>
-<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;</div>
-<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;    <span class="keyword">private</span>:</div>
-<div class="line"><a name="l00081"></a><span class="lineno"><a class="line" href="class_atlas_1_1_system.html#ab1ef2aa9992dd8ae85793e1a1f980e1e">   81</a></span>&#160;        <span class="keyword">friend</span> <span class="keyword">class </span><a class="code" href="class_atlas_1_1_system_manager.html">SystemManager</a>;  <span class="comment">// Give full access to SystemManager</span></div>
-<div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;</div>
-<div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;        <span class="keyword">virtual</span> <span class="keywordtype">void</span>                                        <span class="keyword">remove</span>(<a class="code" href="class_atlas_1_1_entity.html">Entity</a>&amp; <a class="code" href="class_atlas_1_1_entity.html">Entity</a>);</div>
-<div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;        </div>
-<div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160;        <span class="keywordtype">void</span>                                                setSystemBits(<span class="keyword">const</span> std::bitset&lt;BITSIZE&gt;&amp; Bit);</div>
-<div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160;</div>
-<div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160;    <span class="keyword">private</span>:</div>
-<div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160;        <a class="code" href="class_atlas_1_1_world.html">World</a>&amp;                                              mWorld;</div>
-<div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160;        std::vector&lt;Entity::ID&gt;                             mEntities;</div>
-<div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160;        std::bitset&lt;BITSIZE&gt;                                mTypeBits;</div>
-<div class="line"><a name="l00099"></a><span class="lineno">   99</span>&#160;        std::bitset&lt;BITSIZE&gt;                                mSystemBits;</div>
-<div class="line"><a name="l00100"></a><span class="lineno">  100</span>&#160;    };</div>
-<div class="line"><a name="l00101"></a><span class="lineno">  101</span>&#160;}</div>
+<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;        <span class="keyword">const</span> std::vector&lt;Entity::ID&gt;&amp;              <a class="code" href="class_atlas_1_1_system.html#a9261d2971364794652edd65407030946">getEntities</a>() <span class="keyword">const</span>;</div>
+<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;</div>
+<div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;        <a class="code" href="class_atlas_1_1_world.html">World</a>&amp;                                              <a class="code" href="class_atlas_1_1_system.html#a9fb4808effbe3bdcc1738479d464503d">getWorld</a>() <span class="keyword">const</span>;</div>
+<div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;</div>
+<div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;    <span class="keyword">private</span>:</div>
+<div class="line"><a name="l00087"></a><span class="lineno"><a class="line" href="class_atlas_1_1_system.html#ab1ef2aa9992dd8ae85793e1a1f980e1e">   87</a></span>&#160;        <span class="keyword">friend</span> <span class="keyword">class </span><a class="code" href="class_atlas_1_1_system_manager.html">SystemManager</a>;  <span class="comment">// Give full access to SystemManager</span></div>
+<div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;</div>
+<div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160;        <span class="keyword">virtual</span> <span class="keywordtype">void</span>                                        <span class="keyword">remove</span>(<a class="code" href="class_atlas_1_1_entity.html">Entity</a>&amp; <a class="code" href="class_atlas_1_1_entity.html">Entity</a>);</div>
+<div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160;        </div>
+<div class="line"><a name="l00099"></a><span class="lineno">   99</span>&#160;        <span class="keywordtype">void</span>                                                setSystemBits(<span class="keyword">const</span> std::bitset&lt;BITSIZE&gt;&amp; Bit);</div>
+<div class="line"><a name="l00100"></a><span class="lineno">  100</span>&#160;</div>
+<div class="line"><a name="l00101"></a><span class="lineno">  101</span>&#160;    <span class="keyword">private</span>:</div>
+<div class="line"><a name="l00102"></a><span class="lineno">  102</span>&#160;        <a class="code" href="class_atlas_1_1_world.html">World</a>&amp;                                              mWorld;</div>
+<div class="line"><a name="l00103"></a><span class="lineno">  103</span>&#160;        std::vector&lt;Entity::ID&gt;                             mEntities;</div>
+<div class="line"><a name="l00104"></a><span class="lineno">  104</span>&#160;        std::bitset&lt;BITSIZE&gt;                                mTypeBits;</div>
+<div class="line"><a name="l00105"></a><span class="lineno">  105</span>&#160;        std::bitset&lt;BITSIZE&gt;                                mSystemBits;</div>
+<div class="line"><a name="l00106"></a><span class="lineno">  106</span>&#160;    };</div>
+<div class="line"><a name="l00107"></a><span class="lineno">  107</span>&#160;}</div>
 <div class="ttc" id="class_atlas_1_1_system_html_a9fb4808effbe3bdcc1738479d464503d"><div class="ttname"><a href="class_atlas_1_1_system.html#a9fb4808effbe3bdcc1738479d464503d">Atlas::System::getWorld</a></div><div class="ttdeci">World &amp; getWorld() const </div><div class="ttdoc">Retrieves the World object for this System. </div></div>
-<div class="ttc" id="class_atlas_1_1_system_html_a1f5a99c13450255196ffd3951d37dba2"><div class="ttname"><a href="class_atlas_1_1_system.html#a1f5a99c13450255196ffd3951d37dba2">Atlas::System::addComponentType</a></div><div class="ttdeci">void addComponentType()</div><div class="ttdoc">Adds a Component type for the System to process. </div><div class="ttdef"><b>Definition:</b> System.h:59</div></div>
+<div class="ttc" id="class_atlas_1_1_system_html_a1f5a99c13450255196ffd3951d37dba2"><div class="ttname"><a href="class_atlas_1_1_system.html#a1f5a99c13450255196ffd3951d37dba2">Atlas::System::addComponentType</a></div><div class="ttdeci">void addComponentType()</div><div class="ttdoc">Adds a Component type for the System to process. </div><div class="ttdef"><b>Definition:</b> System.h:64</div></div>
 <div class="ttc" id="class_atlas_1_1_system_html_addaea85118aa3b2aa8d590694d84150f"><div class="ttname"><a href="class_atlas_1_1_system.html#addaea85118aa3b2aa8d590694d84150f">Atlas::System::Ptr</a></div><div class="ttdeci">std::unique_ptr&lt; System &gt; Ptr</div><div class="ttdoc">Standard pointer when referring to a System. </div><div class="ttdef"><b>Definition:</b> System.h:19</div></div>
 <div class="ttc" id="class_atlas_1_1_system_html_a6a34a4a52146576e6c8b716e42813c42"><div class="ttname"><a href="class_atlas_1_1_system.html#a6a34a4a52146576e6c8b716e42813c42">Atlas::System::update</a></div><div class="ttdeci">virtual void update(float dt)=0</div><div class="ttdoc">Proccesses all Entities relevant to this System. </div></div>
 <div class="ttc" id="class_atlas_1_1_system_html_a5e559f53810d685ea4d3d3edab5863ab"><div class="ttname"><a href="class_atlas_1_1_system.html#a5e559f53810d685ea4d3d3edab5863ab">Atlas::System::System</a></div><div class="ttdeci">System(World &amp;world)</div><div class="ttdoc">Creates a new System. </div></div>
 <div class="ttc" id="class_atlas_1_1_system_manager_html"><div class="ttname"><a href="class_atlas_1_1_system_manager.html">Atlas::SystemManager</a></div><div class="ttdoc">A manager for all Systems that are used. </div><div class="ttdef"><b>Definition:</b> SystemManager.h:14</div></div>
 <div class="ttc" id="_entity_8h_html"><div class="ttname"><a href="_entity_8h.html">Entity.h</a></div></div>
-<div class="ttc" id="class_atlas_1_1_system_html_a9261d2971364794652edd65407030946"><div class="ttname"><a href="class_atlas_1_1_system.html#a9261d2971364794652edd65407030946">Atlas::System::getEntities</a></div><div class="ttdeci">const std::vector&lt; Entity::ID &gt; &amp; getEntities() const </div><div class="ttdoc">Retrieves the Entity::ID&#39;s of interested Entities. </div></div>
+<div class="ttc" id="class_atlas_1_1_system_html_a9261d2971364794652edd65407030946"><div class="ttname"><a href="class_atlas_1_1_system.html#a9261d2971364794652edd65407030946">Atlas::System::getEntities</a></div><div class="ttdeci">const std::vector&lt; Entity::ID &gt; &amp; getEntities() const </div><div class="ttdoc">Retrieves the Entity::IDs of interested Entities. </div></div>
 <div class="ttc" id="class_atlas_1_1_world_html"><div class="ttname"><a href="class_atlas_1_1_world.html">Atlas::World</a></div><div class="ttdoc">Represents the game world. </div><div class="ttdef"><b>Definition:</b> World.h:13</div></div>
 <div class="ttc" id="class_atlas_1_1_system_html_af1d6115389794e4774d8b82fcc0e9968"><div class="ttname"><a href="class_atlas_1_1_system.html#af1d6115389794e4774d8b82fcc0e9968">Atlas::System::checkInterest</a></div><div class="ttdeci">virtual void checkInterest(Entity &amp;Entity)</div><div class="ttdoc">Checks to see if the System is interested in an Entity based on which Components it owns...</div></div>
 <div class="ttc" id="class_atlas_1_1_system_html_a967bd7a27e8553f55b156da9959ad2da"><div class="ttname"><a href="class_atlas_1_1_system.html#a967bd7a27e8553f55b156da9959ad2da">Atlas::System::~System</a></div><div class="ttdeci">virtual ~System()</div></div>
@@ -178,16 +175,16 @@ $(document).ready(function(){initNavTree('_system_8h_source.html','');});
 <div class="ttc" id="class_atlas_1_1_system_html_a59f8265beba8a9aa634069e09fbb48c9"><div class="ttname"><a href="class_atlas_1_1_system.html#a59f8265beba8a9aa634069e09fbb48c9">Atlas::System::getTypeBits</a></div><div class="ttdeci">std::bitset&lt; BITSIZE &gt; getTypeBits() const </div><div class="ttdoc">Retrieves the Component bit types that the System will process. </div></div>
 <div class="ttc" id="class_atlas_1_1_entity_html"><div class="ttname"><a href="class_atlas_1_1_entity.html">Atlas::Entity</a></div><div class="ttdoc">Used to represent any game object. </div><div class="ttdef"><b>Definition:</b> Entity.h:18</div></div>
 <div class="ttc" id="_component_identifier_manager_8h_html"><div class="ttname"><a href="_component_identifier_manager_8h.html">ComponentIdentifierManager.h</a></div></div>
-<div class="ttc" id="class_atlas_1_1_system_html"><div class="ttname"><a href="class_atlas_1_1_system.html">Atlas::System</a></div><div class="ttdef"><b>Definition:</b> System.h:15</div></div>
+<div class="ttc" id="class_atlas_1_1_system_html"><div class="ttname"><a href="class_atlas_1_1_system.html">Atlas::System</a></div><div class="ttdoc">Base class for all Systems. </div><div class="ttdef"><b>Definition:</b> System.h:15</div></div>
 <div class="ttc" id="class_atlas_1_1_non_copyable_html"><div class="ttname"><a href="class_atlas_1_1_non_copyable.html">Atlas::NonCopyable</a></div><div class="ttdoc">Base class for objects not intended to be copied. </div><div class="ttdef"><b>Definition:</b> NonCopyable.h:8</div></div>
-<div class="ttc" id="class_atlas_1_1_system_html_af217c50cdd80c640ac5331f642bafa50"><div class="ttname"><a href="class_atlas_1_1_system.html#af217c50cdd80c640ac5331f642bafa50">Atlas::System::getSystemBits</a></div><div class="ttdeci">std::bitset&lt; BITSIZE &gt; getSystemBits() const </div><div class="ttdoc">Retrieves the system type bits that the system assigned to this System. </div></div>
+<div class="ttc" id="class_atlas_1_1_system_html_af217c50cdd80c640ac5331f642bafa50"><div class="ttname"><a href="class_atlas_1_1_system.html#af217c50cdd80c640ac5331f642bafa50">Atlas::System::getSystemBits</a></div><div class="ttdeci">std::bitset&lt; BITSIZE &gt; getSystemBits() const </div><div class="ttdoc">Retrieves the system type bits that are assigned to this System. </div></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_deab0274b0ce5afb2d8b2900fd55861b.html">PerforceWorkspace</a></li><li class="navelem"><a class="el" href="dir_fe6635c7fdf95c26f57ca73d06786c89.html">Drew-DeskPC</a></li><li class="navelem"><a class="el" href="dir_6115c5eb071306b4e2f9a9c189cd7297.html">Atlas</a></li><li class="navelem"><a class="el" href="dir_ef0c7481dbf7372e458ee2a94cfb5d13.html">EntityComponentTest</a></li><li class="navelem"><a class="el" href="dir_15676b1bfeeedce8a1e6d3ac8e585651.html">include</a></li><li class="navelem"><a class="el" href="_system_8h.html">System.h</a></li>
-    <li class="footer">Generated on Thu Jul 3 2014 16:12:06 for Atlas by
+    <li class="footer">Generated on Fri Jul 4 2014 13:59:50 for Atlas by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.7 </li>
   </ul>

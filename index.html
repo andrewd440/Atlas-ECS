@@ -109,8 +109,8 @@ $(document).ready(function(){initNavTree('index.html','');});
 </ul>
 </div>
 <div class="textblock"><h1><a class="el" href="namespace_atlas.html">Atlas</a> - A Fast, Convenient C++ Entity Component System </h1>
-<p>An Entity Component System is a software technique using Composition rather than Inheritance to build high-performance code-architectures in modern C++ 11. <a class="el" href="namespace_atlas.html">Atlas</a> was designed to take advantage of the decoupling and effeciency that this architecture provides.</p>
-<p><a class="el" href="namespace_atlas.html">Atlas</a> is a simple and convenient component entity system that has influences from the popular Java ECS Artemis</p>
+<p>An <a href="http://en.wikipedia.org/wiki/Entity_component_system">Entity Component System</a> is a software technique using Composition rather than Inheritance to build high-performance code-architectures. <a class="el" href="namespace_atlas.html">Atlas</a> was designed to take advantage of the decoupling and effeciency that this architecture provides in modern C++ 11.</p>
+<p><a class="el" href="namespace_atlas.html">Atlas</a> is a simple and convenient component entity system that has influences from the popular Java ECS <a href="http://gamadu.com/artemis/">Artemis</a></p>
 <h1><a class="anchor" id="tutorial"></a>
 Tutorial</h1>
 <hr/>
@@ -118,7 +118,7 @@ Tutorial</h1>
 <h1><a class="anchor" id="entities"></a>
 Entities</h1>
 <hr/>
-<p><code><a class="el" href="class_atlas_1_1_entity.html" title="Used to represent any game object. ">Atlas::Entity</a></code>'s are essensially a container of <code><a class="el" href="class_atlas_1_1_component.html" title="Base class for all Components. ">Atlas::Component</a></code>s. Each <code><a class="el" href="class_atlas_1_1_entity.html" title="Used to represent any game object. ">Atlas::Entity</a></code> has a unique <code><a class="el" href="class_atlas_1_1_entity.html#a72f875bc40c74779cd7410eb7caa9753" title="ID type for an Entity. ">Atlas::Entity::ID</a></code> that is used to represent relationships with <code><a class="el" href="class_atlas_1_1_component.html" title="Base class for all Components. ">Atlas::Component</a></code>s.</p>
+<p>Entities are essensially a container of Components. Each <code><a class="el" href="class_atlas_1_1_entity.html" title="Used to represent any game object. ">Atlas::Entity</a></code> has a unique <code><a class="el" href="class_atlas_1_1_entity.html#a72f875bc40c74779cd7410eb7caa9753" title="ID type for an Entity. ">Atlas::Entity::ID</a></code> that is used to represent relationships with <code><a class="el" href="class_atlas_1_1_component.html" title="Base class for all Components. ">Atlas::Component</a></code>s.</p>
 <p>All entities are created internally by the <code><a class="el" href="class_atlas_1_1_entity_manager.html" title="Manages all Entities and Components within the a World. ">Atlas::EntityManager</a></code>. In addition <code><a class="el" href="class_atlas_1_1_world.html" title="Represents the game world. ">Atlas::World</a></code> provides a delegated function to create entities. </p><div class="fragment"><div class="line"><a class="code" href="class_atlas_1_1_world.html">Atlas::World</a> world;</div>
 <div class="line"><a class="code" href="class_atlas_1_1_entity.html">Atlas::Entity</a>&amp; entity = world.<a class="code" href="class_atlas_1_1_world.html#a48402b7e76046282f63700b3aadb02bd">createEntity</a>();</div>
 </div><!-- fragment --><p>To destroy an <code><a class="el" href="class_atlas_1_1_entity.html" title="Used to represent any game object. ">Atlas::Entity</a></code>, you simply set it as inactive and it will be destroyed on the next <code><a class="el" href="class_atlas_1_1_entity_manager.html#a96b3b559726bb8f97bf87aabeeb26ea1" title="Removes all entities that have been set to inactive. ">Atlas::EntityManager::update()</a></code> </p><div class="fragment"><div class="line">entity.<a class="code" href="class_atlas_1_1_entity.html#a2938049a0af4d9c70b89d2426d52e03f">setActive</a>(<span class="keyword">false</span>);</div>
@@ -126,14 +126,14 @@ Entities</h1>
 <ul>
 <li>Entities are maintained within the <code><a class="el" href="class_atlas_1_1_entity_manager.html" title="Manages all Entities and Components within the a World. ">Atlas::EntityManager</a></code></li>
 <li>When Entities are destroyed, their ID is placed into a pool to be reused</li>
-<li>An <code><a class="el" href="class_atlas_1_1_entity.html" title="Used to represent any game object. ">Atlas::Entity</a></code> holds two bitsets: <code><a class="el" href="class_atlas_1_1_component.html" title="Base class for all Components. ">Atlas::Component</a></code> bits and <code><a class="el" href="class_atlas_1_1_system.html">Atlas::System</a></code> bits</li>
-<li>The <code><a class="el" href="class_atlas_1_1_component.html" title="Base class for all Components. ">Atlas::Component</a></code> bits represent the types of <code><a class="el" href="class_atlas_1_1_component.html" title="Base class for all Components. ">Atlas::Component</a></code>s the entity has</li>
-<li>The <code><a class="el" href="class_atlas_1_1_system.html">Atlas::System</a></code> bits represent the <code><a class="el" href="class_atlas_1_1_system.html">Atlas::System</a></code>s that the entity is included in</li>
+<li>An <code><a class="el" href="class_atlas_1_1_entity.html" title="Used to represent any game object. ">Atlas::Entity</a></code> holds two bitsets: one for represents Components and one for Systems</li>
+<li>The Component bits represent the types of <code><a class="el" href="class_atlas_1_1_component.html" title="Base class for all Components. ">Atlas::Component</a></code>s the entity owns</li>
+<li>The System bits represent the <code><a class="el" href="class_atlas_1_1_system.html" title="Base class for all Systems. ">Atlas::System</a></code>s that the entity is being processed by</li>
 </ul>
 <h1><a class="anchor" id="components"></a>
 Components</h1>
 <hr/>
-<p> <a class="el" href="namespace_atlas.html">Atlas</a> was designed for users to separate logic and data. Data is placed into components. All components inherit from <code><a class="el" href="class_atlas_1_1_component.html" title="Base class for all Components. ">Atlas::Component</a></code>.</p>
+<p> <a class="el" href="namespace_atlas.html">Atlas</a> was designed for users to keep logic and data separate. Data is placed into components. All components inherit from <code><a class="el" href="class_atlas_1_1_component.html" title="Base class for all Components. ">Atlas::Component</a></code>.</p>
 <h2>Creating a Component </h2>
 <div class="fragment"><div class="line"><span class="keyword">struct </span>PositionComponent : <span class="keyword">public</span> <a class="code" href="class_atlas_1_1_component.html">Atlas::Component</a></div>
 <div class="line">{</div>
@@ -147,7 +147,7 @@ Components</h1>
 <div class="line">    <span class="keywordtype">float</span> x, y;</div>
 <div class="line">}</div>
 </div><!-- fragment --><h2>Attaching Components to Entities </h2>
-<p>Components can be attached to entities through <code><a class="el" href="class_atlas_1_1_entity_manager.html#a60d98b2af0fdcfd9fce742261d60d64a" title="Attaches a Component to an Entity. ">Atlas::EntityManager::addComponent()</a></code> or <code><a class="el" href="class_atlas_1_1_entity.html#a0b8ba9fab2d5f9598e623ca82bc2d2ef" title="Adds a Component to the Entity. ">Atlas::Entity::addComponent()</a></code>. </p><div class="fragment"><div class="line">entity.addCompnent(<a class="code" href="class_atlas_1_1_component.html#addb4f2594a97843051e957b144c0ada9">Atlas::Component::Ptr</a>(<span class="keyword">new</span> PositionComponent(100, 100)));</div>
+<p>Components can be attached to entities through <code><a class="el" href="class_atlas_1_1_entity_manager.html#a60d98b2af0fdcfd9fce742261d60d64a" title="Attaches a Component to an Entity. ">Atlas::EntityManager::addComponent()</a></code> or <code><a class="el" href="class_atlas_1_1_entity.html#a0b8ba9fab2d5f9598e623ca82bc2d2ef" title="Adds a Component to the Entity. ">Atlas::Entity::addComponent()</a></code>. </p><div class="fragment"><div class="line">entity.<a class="code" href="class_atlas_1_1_entity.html#a0b8ba9fab2d5f9598e623ca82bc2d2ef">addComponent</a>(<a class="code" href="class_atlas_1_1_component.html#addb4f2594a97843051e957b144c0ada9">Atlas::Component::Ptr</a>(<span class="keyword">new</span> PositionComponent(100, 100)));</div>
 </div><!-- fragment --><h2>Retrieving Components </h2>
 <p>Components can be retrieved through <code><a class="el" href="class_atlas_1_1_entity_manager.html#a82644ec8d97252f35a9f0277968c8c9c" title="Retrieve a specific Component from an Entity. ">Atlas::EntityManager::getComponentFor</a>&lt;&gt;()</code> or <code><a class="el" href="class_atlas_1_1_entity.html#a1b593b3996207a6bd4b75404cf081261" title="Retrieves a specified Component from the Entity. ">Atlas::Entity::getComponent</a>&lt;&gt;()</code>. This will return a pointer to the base type for the component. </p><div class="fragment"><div class="line">PositionComponent* position = entity.<a class="code" href="class_atlas_1_1_entity.html#a1b593b3996207a6bd4b75404cf081261">getComponent</a>&lt;PositionComponent&gt;();</div>
 <div class="line">position-&gt;x += 10;</div>
@@ -155,12 +155,12 @@ Components</h1>
 <ul>
 <li>Components are maintained within the <code><a class="el" href="class_atlas_1_1_entity_manager.html" title="Manages all Entities and Components within the a World. ">Atlas::EntityManager</a></code></li>
 <li>When a new component type is added, it receives a unique <code><a class="el" href="class_atlas_1_1_component_identifier.html" title="Handle used for Components. ">Atlas::ComponentIdentifier</a></code> through the <code><a class="el" href="class_atlas_1_1_component_identifier_manager.html" title="Used to assign a unique ID and Bit to a System when added to the SystemManager. ">Atlas::ComponentIdentifierManager</a></code></li>
-<li>Components are stored in a 2D <code>std::vector</code> using the ID from the <code><a class="el" href="class_atlas_1_1_component_identifier.html" title="Handle used for Components. ">Atlas::ComponentIdentifier</a></code> and <code><a class="el" href="class_atlas_1_1_entity.html#a72f875bc40c74779cd7410eb7caa9753" title="ID type for an Entity. ">Atlas::Entity::ID</a></code> as indexes to it's position in the table</li>
+<li>Components are stored in a 2D <code>std::vector</code> using the ID from the <code><a class="el" href="class_atlas_1_1_component_identifier.html" title="Handle used for Components. ">Atlas::ComponentIdentifier</a></code> and <code><a class="el" href="class_atlas_1_1_entity.html#a72f875bc40c74779cd7410eb7caa9753" title="ID type for an Entity. ">Atlas::Entity::ID</a></code> as indexes to it's position in a table-like structure</li>
 </ul>
 <h1><a class="anchor" id="systems"></a>
 Systems</h1>
 <hr/>
-<p> Most, if not all, logic should be placed within a System. Each system should inherit from <code><a class="el" href="class_atlas_1_1_system.html">Atlas::System</a></code>.</p>
+<p> Most, if not all, logic should be placed within a System. Each system should inherit from <code><a class="el" href="class_atlas_1_1_system.html" title="Base class for all Systems. ">Atlas::System</a></code>.</p>
 <p>All systems must implement the <code><a class="el" href="class_atlas_1_1_system.html#a6a34a4a52146576e6c8b716e42813c42" title="Proccesses all Entities relevant to this System. ">Atlas::System::update()</a></code> function and each system is responsible for adding the component types that it is interested in processing. </p><div class="fragment"><div class="line"><span class="keyword">class </span>MovementSystem : <span class="keyword">public</span> <a class="code" href="class_atlas_1_1_system.html">Atlas::System</a></div>
 <div class="line">{</div>
 <div class="line"><span class="keyword">public</span>:</div>
@@ -210,7 +210,7 @@ Grouping Entities</h1>
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="footer">Generated on Thu Jul 3 2014 16:12:07 for Atlas by
+    <li class="footer">Generated on Fri Jul 4 2014 13:59:51 for Atlas by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.7 </li>
   </ul>
