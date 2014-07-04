@@ -1,6 +1,6 @@
 # Atlas - A Fast, Convenient C++ Entity Component System
 An [Entity Component System](http://en.wikipedia.org/wiki/Entity_component_system) is a software technique using Composition rather than Inheritance to build 
-high-performance code-architectures in modern C++ 11. Atlas was designed to take advantage of the decoupling and effeciency that this architecture provides.
+high-performance code-architectures. Atlas was designed to take advantage of the decoupling and effeciency that this architecture provides in modern C++ 11.
 
 Atlas is a simple and convenient entity component system that has influences
 from the popular Java ECS [Artemis](http://gamadu.com/artemis/)
@@ -15,10 +15,10 @@ Online [Doxygen](http://www.stack.nl/~dimitri/doxygen/) generated documentation:
 
 ## Entities
  
-`Atlas::Entity`'s are essensially a container of `Atlas::Component`s. Each `Atlas::Entity` has a unique `Atlas::Entity::ID` 
+Entitys are essensially a container of Components. Each `Atlas::Entity` has a unique `Atlas::Entity::ID` 
 that is used to represent relationships with `Atlas::Component`s. 
 
-All entities are created internally by the `Atlas::EntityManager`. In addition `Atlas::World` provides a delegated function 
+All entities are created internally by the `Atlas::EntityManager`. In addition, `Atlas::World` provides a delegated function 
 to create entities.
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 Atlas::World world;
@@ -34,13 +34,13 @@ entity.setActive(false);
 
 - Entities are maintained within the `Atlas::EntityManager`
 - When Entities are destroyed, their ID is placed into a pool to be reused
-- An `Atlas::Entity` holds two bitsets: `Atlas::Component` bits and `Atlas::System` bits
-- The `Atlas::Component` bits represent the types of `Atlas::Component`s the entity has
-- The `Atlas::System` bits represent the `Atlas::System`s that the entity is included in
+- An `Atlas::Entity` holds two bitsets: one for represents Components and one for Systems
+- The Component bits represent the types of `Atlas::Component`s the entity owns
+- The System bits represent the `Atlas::System`s that the entity is being processed by
  
 
 ## Components
- Atlas was designed for users to separate logic and data. Data is placed into components.
+ Atlas was designed for users to keep logic and data separate. Data is placed into components.
  All components inherit from `Atlas::Component`.
 
 ###Creating a Component
@@ -61,7 +61,7 @@ struct VelocityComponent : public Atlas::Component
 ###Attaching Components to Entities
 Components can be attached to entities through `Atlas::EntityManager::addComponent()` or `Atlas::Entity::addComponent()`.
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-entity.addCompnent(Atlas::Component::Ptr(new PositionComponent(100, 100)));
+entity.addComponent(Atlas::Component::Ptr(new PositionComponent(100, 100)));
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 ###Retrieving Components
@@ -74,7 +74,7 @@ position->x += 10;
 ###Implementation Information
 - Components are maintained within the `Atlas::EntityManager`
 - When a new component type is added, it receives a unique `Atlas::ComponentIdentifier` through the `Atlas::ComponentIdentifierManager`
-- Components are stored in a 2D `std::vector` using the ID from the `Atlas::ComponentIdentifier` and `Atlas::Entity::ID` as indexes to it's position in the table
+- Components are stored in a 2D `std::vector` using the ID from the `Atlas::ComponentIdentifier` and `Atlas::Entity::ID` as indexes to it's position in a table-like structure
 
 ## Systems
 Most, if not all, logic should be placed within a System. Each system should inherit from `Atlas::System`.
@@ -109,7 +109,7 @@ public:
  
 ###Implementation Information
 - Systems only hold `Atlas::Entity::ID`s to refer to entities
-- Each time a component is added to or removed from `Atlas::Entity`, all systems recieve a notification that checks if the entity should be processed by the system
+- Each time a component is added to, or removed from, an `Atlas::Entity`, all systems recieve a notification that checks if the entity should be processed by the system
 
  
 ## Grouping Entities
