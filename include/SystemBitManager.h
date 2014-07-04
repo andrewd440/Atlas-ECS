@@ -15,16 +15,26 @@ namespace Atlas
 	public:
 		/**
 		* Retrieves the bits for a System
+		*
+		* Usage Example:
+		* ~~~~~~~~~~~~~~~~~~~~~~~
+		* system.setSystemBits(Atlas::SystemBitManager::getBitsFor(typeid(HealthSystem)));
+		* ~~~~~~~~~~~~~~~~~~~~~~~
 		* @param type - the System of interest
-		* @return a bitset containing the System bit
+		* @return A bitset containing the System bit
 		*/
 		static std::bitset<BITSIZE>						getBitsFor(const std::type_index& type);
 
 		template <typename T>
 		/**
 		* Retrieves the bits for a System
+		*
+		* Usage Example:
+		* ~~~~~~~~~~~~~~~~~~~~~~~
+		* system.setSystemBits(Atlas::SystemBitManager::getBitsFor<HealthSystem>());
+		* ~~~~~~~~~~~~~~~~~~~~~~~
 		* @param type - pointer to a System
-		* @return a bitset containing the System bit
+		* @return A bitset containing the System bit
 		*/
 		static std::bitset<BITSIZE>						getBitsFor(const T* type)
 		{

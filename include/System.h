@@ -9,7 +9,7 @@
 
 namespace Atlas
 {
-	/*
+	/**
 	* Base class for all Systems
 	*/
 	class System : public NonCopyable
@@ -41,8 +41,8 @@ namespace Atlas
 		virtual void										checkInterest(Entity& Entity);
 
 		/**
-		* Retrieves the system type bits that the system assigned to this System.
-		* @return Bitset representing interested types
+		* Retrieves the system type bits that are assigned to this System.
+		* @return Bitset assigned to this System
 		*/
 		std::bitset<BITSIZE>								getSystemBits() const;
 
@@ -52,10 +52,15 @@ namespace Atlas
 		void												toString();
 
 	protected:
+		template <typename T>
 		/**
 		* Adds a Component type for the System to process.
+		*
+		* Usage Example: (in HealthSystem constructor)
+		* ~~~~~~~~~~~~~~~~~~~~~
+		* addComponentType<HealthComponent>();
+		* ~~~~~~~~~~~~~~~~~~~~~
 		*/
-		template <typename T>
 		void												addComponentType()
 		{
 			mTypeBits |= ComponentIdentifierManager::getBits<T>();
@@ -68,7 +73,8 @@ namespace Atlas
 		std::bitset<BITSIZE>								getTypeBits() const;
 
 		/**
-		* Retrieves the Entity::ID's of interested Entities
+		* Retrieves the Entity::IDs of interested Entities
+		* @return Container of Entity::IDs
 		*/
 		const std::vector<Entity::ID>&				getEntities() const;
 

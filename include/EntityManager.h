@@ -45,12 +45,12 @@ namespace Atlas
 
 		/**
 		* Attaches a Component to an Entity
-		* @param entity - The Entity to add the Component to
 		*
 		* Usage Example:
 		~~~~~~~~~~~~~~~~~~
 		* entityManager.addComponent(entity, Atlas::Component::Ptr(new HealthComponent()));
 		~~~~~~~~~~~~~~~~~~
+		* @param entity - The Entity to add the Component to
 		* @param component - Component to add
 		*/
 		void											addComponent(Entity& entity, Component::Ptr component);

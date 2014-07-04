@@ -3,7 +3,7 @@
 namespace Atlas
 {
 	/** 
-	* Standard size on bitsets used in Atlas
+	* Max size of Components used
 	*/
 	const int BITSIZE = 32;
 }

@@ -24,7 +24,8 @@ namespace Atlas
 		* Adds a new System.
 		* Usage Example:
 		~~~~~~~~~~~~~~~~
-		* SystemManager.addSystem(Atlas::System::Ptr(new HealthSystem()));
+		* Atlas::World world;
+		* SystemManager.addSystem(Atlas::System::Ptr(new HealthSystem(world)));
 		~~~~~~~~~~~~~~~~
 		* @param system - the System to be added.
 		*/
@@ -56,7 +57,8 @@ namespace Atlas
 		}
 
 		/**
-		* Updates the System.
+		* Updates all Systems.
+		* Update order is based on the order that Systems are added to the SystemManager.
 		* @param dt - update time
 		*/
 		void												update(float dt);
@@ -73,7 +75,7 @@ namespace Atlas
 		* Removes a System.
 		* Usage Example:
 		~~~~~~~~~~~~~~~~
-		* SystemManager.removeSystem<HealthSystem>();
+		* systemManager.removeSystem<HealthSystem>();
 		~~~~~~~~~~~~~~~~
 		*/
 		void												removeSystem();

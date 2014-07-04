@@ -19,10 +19,10 @@ namespace Atlas
 		World();
 
 		/**
-		* Updates the World.
+		* Updates the EntityManager and SystemManager.
 		* @param dt - update time
 		*/
-		void													update(float dt);
+		virtual void											update(float dt);
 
 		/**
 		* Creates an empty Entity.

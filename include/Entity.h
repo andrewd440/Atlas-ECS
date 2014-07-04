@@ -42,7 +42,7 @@ namespace Atlas
 
 		/**
 		* Retrieves all Components that are attached to the Entity.
-		* @return all Components owned by the Entity
+		* @return All Components owned by the Entity
 		*/
 		std::vector<Component*>						getAllComponents() const;
 
@@ -73,11 +73,13 @@ namespace Atlas
 
 		/**
 		* Retrieves the ID assigned to the Entity
+		* @return The ID
 		*/
 		ID									getID() const;
 		
 		/**
 		* Checks if the Entity is active
+		* @return True if Entity is active
 		*/
 		bool										isActive() const;
 
