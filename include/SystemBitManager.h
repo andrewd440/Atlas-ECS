@@ -23,7 +23,7 @@ namespace Atlas
 		* @param type - the System of interest
 		* @return A bitset containing the System bit
 		*/
-		static std::bitset<BITSIZE>						getBitsFor(const std::type_index& type);
+		static std::bitset<BITSIZE> getBitsFor(const std::type_index& type);
 
 		template <typename T>
 		/**
@@ -36,7 +36,7 @@ namespace Atlas
 		* @param type - pointer to a System
 		* @return A bitset containing the System bit
 		*/
-		static std::bitset<BITSIZE>						getBitsFor(const T* type)
+		static std::bitset<BITSIZE> getBitsFor(const T* type)
 		{
 			return getBitsFor(typeid(*type));
 		}
@@ -45,7 +45,7 @@ namespace Atlas
 	private:
 		SystemBitManager() = default; 		//Not meant for instantiation
 
-		static std::unordered_map<std::type_index, std::bitset<BITSIZE>>	mSystemBitMap;
-		static std::bitset<BITSIZE>											mNextBit;
+		static std::unordered_map<std::type_index, std::bitset<BITSIZE>>    mSystemBitMap;
+		static std::bitset<BITSIZE>                                         mNextBit;
 	};
 }

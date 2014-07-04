@@ -23,13 +23,13 @@ namespace Atlas
 		* @param world - the World object that owns this System
 		*/
 		System(World& world);
-		virtual												~System();
+		virtual ~System();
 
 		/**
 		* Proccesses all Entities relevant to this System.
 		* @param dt - update time
 		*/
-		virtual void										update(float dt) = 0;
+		virtual void update(float dt) = 0;
 
 		/**
 		* Checks to see if the System is interested in an Entity based on which
@@ -38,18 +38,18 @@ namespace Atlas
 		* it already contains, the Entity will be removed from the System.
 		* @param Entity - the Entity to be checked
 		*/
-		virtual void										checkInterest(Entity& Entity);
+		virtual void checkInterest(Entity& Entity);
 
 		/**
 		* Retrieves the system type bits that are assigned to this System.
 		* @return Bitset assigned to this System
 		*/
-		std::bitset<BITSIZE>								getSystemBits() const;
+		std::bitset<BITSIZE> getSystemBits() const;
 
 		/**
 		* Prints Entities in the System, as well as this System's TypeBits and SystemBits
 		*/
-		void												toString();
+		void toString();
 
 	protected:
 		template <typename T>
@@ -61,7 +61,7 @@ namespace Atlas
 		* addComponentType<HealthComponent>();
 		* ~~~~~~~~~~~~~~~~~~~~~
 		*/
-		void												addComponentType()
+		void addComponentType()
 		{
 			mTypeBits |= ComponentIdentifierManager::getBits<T>();
 		}
@@ -70,18 +70,18 @@ namespace Atlas
 		* Retrieves the Component bit types that the System will process.
 		* @return Bitset of Component types
 		*/
-		std::bitset<BITSIZE>								getTypeBits() const;
+		std::bitset<BITSIZE> getTypeBits() const;
 
 		/**
 		* Retrieves the Entity::IDs of interested Entities
 		* @return Container of Entity::IDs
 		*/
-		const std::vector<Entity::ID>&				getEntities() const;
+		const std::vector<Entity::ID>& getEntities() const;
 
 		/**
 		* Retrieves the World object for this System
 		*/
-		World&												getWorld() const;
+		World& getWorld() const;
 
 	private:
 		friend class SystemManager;  // Give full access to SystemManager
@@ -90,18 +90,18 @@ namespace Atlas
 		* Removes an Entity from the System.
 		* @params Entity - the Entity to be removed
 		*/
-		virtual void										remove(Entity& Entity);
-		
+		virtual void remove(Entity& Entity);
+
 		/**
 		* Assigns a bitset for the System
 		* @params Bit - the bit to be assigned
 		*/
-		void												setSystemBits(const std::bitset<BITSIZE>& Bit);
+		void setSystemBits(const std::bitset<BITSIZE>& Bit);
 
 	private:
-		World&												mWorld;
-		std::vector<Entity::ID>								mEntities;
-		std::bitset<BITSIZE>								mTypeBits;
-		std::bitset<BITSIZE>								mSystemBits;
+		World&                          mWorld;
+		std::vector<Entity::ID>         mEntities;
+		std::bitset<BITSIZE>            mTypeBits;
+		std::bitset<BITSIZE>            mSystemBits;
 	};
 }

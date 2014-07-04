@@ -19,7 +19,7 @@ namespace Atlas
 	class EntityManager : public NonCopyable
 	{
 	public:
-		/** 
+		/**
 		* Creates a new EntityManager.
 		* @param world - the World object that owns this EntityManager
 		*/
@@ -28,20 +28,20 @@ namespace Atlas
 		/**
 		* Removes all entities that have been set to inactive
 		*/
-		void											update();
+		void update();
 
 		/**
 		* Creates an empty Entity
 		* @returns Reference to the new Entity
 		*/
-		Entity&										createEntity();
+		Entity& createEntity();
 
 		/**
 		* Retreives an active Entity
 		* @param ID - The Entity's ID
 		* @returns Reference to the Entity
 		*/
-		Entity&										getEntity(const Entity::ID& ID) const;
+		Entity& getEntity(const Entity::ID& ID) const;
 
 		/**
 		* Attaches a Component to an Entity
@@ -53,7 +53,7 @@ namespace Atlas
 		* @param entity - The Entity to add the Component to
 		* @param component - Component to add
 		*/
-		void											addComponent(Entity& entity, Component::Ptr component);
+		void addComponent(Entity& entity, Component::Ptr component);
 
 		/**
 		* Removes a Component from an Entity
@@ -66,7 +66,7 @@ namespace Atlas
 		* @param entity - The Entity to remove a Component from
 		* @param componentIdentifier - Identifier for the Component
 		*/
-		void											removeComponent(Entity& entity, const ComponentIdentifier& componentIdentifier);
+		void removeComponent(Entity& entity, const ComponentIdentifier& componentIdentifier);
 
 		template <typename T>
 		/**
@@ -109,45 +109,45 @@ namespace Atlas
 		* @param entity - The targeted Entity
 		* @return Vector of Component pointers from the Entity
 		*/
-		std::vector<Component*>								getAllComponentsFor(const Entity& entity);
+		std::vector<Component*> getAllComponentsFor(const Entity& entity);
 
 		/**
 		* Removes and destroys all the Components attached to a Entity.
 		* @param entity - The targeted Entity
 		*/
-		void													removeAllComponentsFor(Entity& entity);
+		void removeAllComponentsFor(Entity& entity);
 
 		/**
 		* Prints the contents of all active Entities and displays the number of inactive Entities
 		*/
-		void													toString();
+		void toString();
 
 	private:
 		/**
 		* Resets an Entity and moves it from the active Entity container to the dead Entity pool
 		* @param entity - The targeted Entity
 		*/
-		void												removeEntity(Entity& entity);
+		void removeEntity(Entity& entity);
 
 	private:
-		unsigned int										mActiveEntityCount;
-		Entity::ID									mNextAvaibleID;
-		World&												mWorld;
+		unsigned int                mActiveEntityCount;
+		Entity::ID                  mNextAvaibleID;
+		World&                      mWorld;
 
 		/** Holds all entities with the ID being used as an index */
-		std::vector<Entity::Ptr>							mActiveEntities;
+		std::vector<Entity::Ptr>   mActiveEntities;
 
 		/** Used as a pool for entity reuse */
-		std::stack<Entity::Ptr>								mDeadEntities;
-		
+		std::stack<Entity::Ptr>    mDeadEntities;
+
 		/**
-		* Holds all Components sorted by its parent Entity and type. 
+		* Holds all Components sorted by its parent Entity and type.
 		* Rows are sorted by ComponentID
 		* Columns are sorted by ID
 		*/
-		std::vector<std::vector<Component::Ptr>>			mComponentsByType;
+		std::vector<std::vector<Component::Ptr>> mComponentsByType;
 
 		/** Temp container used when retrieving components for a single Entity */
-		std::vector<Component*>								mEntityComponents; 
+		std::vector<Component*>      mEntityComponents;
 	};
 }

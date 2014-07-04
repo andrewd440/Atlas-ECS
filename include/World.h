@@ -13,8 +13,8 @@ namespace Atlas
 	class World
 	{
 	public:
-		/** 
-		* Default constructor 
+		/**
+		* Default constructor
 		*/
 		World();
 
@@ -22,33 +22,33 @@ namespace Atlas
 		* Updates the EntityManager and SystemManager.
 		* @param dt - update time
 		*/
-		virtual void											update(float dt);
+		virtual void update(float dt);
 
 		/**
 		* Creates an empty Entity.
 		* @return an empty Entity.
 		*/
-		Entity&													createEntity();
+		Entity& createEntity();
 
 		/**
 		* Retrieves an Entity.
 		* @param id - the id for the Entity
 		* @return an Entity
 		*/
-		Entity&													getEntity(Entity::ID id) const;
+		Entity& getEntity(Entity::ID id) const;
 
 		/** Retrieves the EntityManager */
-		EntityManager&											getEntityManager();
+		EntityManager& getEntityManager();
 
 		/** Retrieves the SystemManager */
-		SystemManager&											getSystemManager();
+		SystemManager& getSystemManager();
 
 		/** Retrieves the GroupManager */
-		GroupManager&											getGroupManager();
+		GroupManager& getGroupManager();
 
 	private:
-		EntityManager											mEntityManager;
-		SystemManager											mSystemManager;
-		GroupManager											mGroupManager;
+		EntityManager          mEntityManager;
+		SystemManager          mSystemManager;
+		GroupManager           mGroupManager;
 	};
 }

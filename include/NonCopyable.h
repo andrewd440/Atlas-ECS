@@ -17,6 +17,6 @@ namespace Atlas
 
 	private:
 		NonCopyable(const NonCopyable&) = delete;
-		NonCopyable&										operator=(const NonCopyable&) = delete;
+		NonCopyable& operator=(const NonCopyable&) = delete;
 	};
 }

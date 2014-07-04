@@ -29,7 +29,7 @@ namespace Atlas
 		~~~~~~~~~~~~~~~~
 		* @param system - the System to be added.
 		*/
-		void												addSystem(System::Ptr system);
+		void addSystem(System::Ptr system);
 		
 		template <typename T>
 		/**
@@ -40,7 +40,7 @@ namespace Atlas
 		~~~~~~~~~~~~
 		* @return pointer to the System.
 		*/
-		T*													getSystem()
+		T* getSystem()
 		{
 			System* system = NULL;
 
@@ -61,14 +61,14 @@ namespace Atlas
 		* Update order is based on the order that Systems are added to the SystemManager.
 		* @param dt - update time
 		*/
-		void												update(float dt);
+		void update(float dt);
 
 		/**
 		* Checks to see if the any Systems contained in the SystemManager is interested 
 		* in an Entity based on which Components it owns.
 		* @param entity - the Entity to be checked
 		*/
-		void												checkInterest(Entity& entity);
+		void checkInterest(Entity& entity);
 
 		template <typename T>
 		/**
@@ -78,15 +78,15 @@ namespace Atlas
 		* systemManager.removeSystem<HealthSystem>();
 		~~~~~~~~~~~~~~~~
 		*/
-		void												removeSystem();
+		void removeSystem();
 
 		/**
 		* Prints the number of active Systems and the details of each of those Systems
 		*/
-		void												toString();
+		void toString();
 
 	private:
-		std::vector<System::Ptr>							mSystems;
-		World&												mWorld;
+		std::vector<System::Ptr>                            mSystems;
+		World&                                              mWorld;
 	};
 }

@@ -19,24 +19,24 @@ namespace Atlas
 
 		/**
 		* Retrieves the unique ID for the identifier
-		*/ 
-		unsigned int						getID() const;
+		*/
+		unsigned int getID() const;
 
 		/**
 		* Retrieves the unique bitset for the identifier
-		*/ 
-		std::bitset<BITSIZE>				getBit() const;
+		*/
+		std::bitset<BITSIZE> getBit() const;
 
 	private:
-		friend class ComponentIdentifierManager; 		// Give full access to the Manager
+		friend class ComponentIdentifierManager;	// Give full access to the Manager
 
-		ComponentIdentifier(); 		// Only to be created by the manager
+		ComponentIdentifier();	// Only to be created by the manager
 
 	private:
-		static unsigned int					nextID;
-		static std::bitset<BITSIZE>			nextBit;
+		static unsigned int             nextID;
+		static std::bitset<BITSIZE>     nextBit;
 
-		unsigned int						mID;
-		std::bitset<BITSIZE>				mBit;
+		unsigned int                    mID;
+		std::bitset<BITSIZE>            mBit;
 	};
 }

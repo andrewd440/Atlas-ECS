@@ -14,6 +14,8 @@ namespace Atlas
 
 		/** Default Constructor */
 		Component();
-		virtual						~Component();
+
+		/** Virtual Destructor */
+		virtual	~Component();
 	};
 }
