@@ -18,7 +18,7 @@ namespace Atlas
 		* Creates a new SystemManager.
 		* @param world - the World object that owns this SystemManager
 		*/
-		SystemManager(World& world);
+		explicit SystemManager(World& world);
 
 		/**
 		* Adds a new System.

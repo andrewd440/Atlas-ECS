@@ -22,7 +22,7 @@ namespace Atlas
 		* Creates a new System.
 		* @param world - the World object that owns this System
 		*/
-		System(World& world);
+		explicit System(World& world);
 		virtual ~System();
 
 		/**

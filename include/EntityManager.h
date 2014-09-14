@@ -23,7 +23,7 @@ namespace Atlas
 		* Creates a new EntityManager.
 		* @param world - the World object that owns this EntityManager
 		*/
-		EntityManager(World& world);
+		explicit EntityManager(World& world);
 
 		/**
 		* Removes all entities that have been set to inactive
