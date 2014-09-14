@@ -2,6 +2,7 @@
 #include "World.h"
 #include "SystemManager.h"
 #include "GroupManager.h"
+#include "ObjectAllocator.h"
 
 struct DummyComponent : public Atlas::Component
 {
@@ -33,6 +34,7 @@ struct DummySystem2 : public Atlas::System
 	void update(float dt) {};
 };
 
+/*
 int main()
 {
 	Atlas::World world;
@@ -70,6 +72,17 @@ int main()
 	manager.toString();
 	sManager.toString();
 	gManager.toString();
+
+	return 0;
+}
+*/
+
+int main()
+{
+	ObjectAllocator allo(sizeof(DummyComponent), 5);
+
+	DummyComponent* component = (DummyComponent*)allo.alloc();
+	new (component)DummyComponent();
 
 	return 0;
 }

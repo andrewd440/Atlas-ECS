@@ -84,7 +84,9 @@
     <ClInclude Include="include\Entity.h" />
     <ClInclude Include="include\EntityManager.h" />
     <ClInclude Include="include\GroupManager.h" />
+    <ClInclude Include="include\ICustomAllocator.h" />
     <ClInclude Include="include\NonCopyable.h" />
+    <ClInclude Include="include\ObjectAllocator.h" />
     <ClInclude Include="include\System.h" />
     <ClInclude Include="include\SystemBitManager.h" />
     <ClInclude Include="include\SystemManager.h" />
@@ -99,6 +101,7 @@
     <ClCompile Include="src\Entity.cpp" />
     <ClCompile Include="src\EntityManager.cpp" />
     <ClCompile Include="src\GroupManager.cpp" />
+    <ClCompile Include="src\ObjectAllocator.cpp" />
     <ClCompile Include="src\System.cpp" />
     <ClCompile Include="src\SystemBitManager.cpp" />
     <ClCompile Include="src\SystemManager.cpp" />
