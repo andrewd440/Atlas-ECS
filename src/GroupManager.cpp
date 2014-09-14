@@ -6,8 +6,8 @@
 namespace Atlas
 {
 	GroupManager::GroupManager()
-		: mEntityGroups()
-		, mGroupsByName()
+		: mGroupsByName()
+		, mEntityGroups()
 	{
 
 	}

@@ -9,10 +9,10 @@ namespace Atlas
 {
 	Entity::Entity(World& world, ID id)
 		: mEntityManager(world.getEntityManager())
+		, mID(id)
+		, mIsActive(false)
 		, mComponentBits()
 		, mSystemBits()
-		, mIsActive(false)
-		, mID(id)
 	{
 	}
 

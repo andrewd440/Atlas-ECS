@@ -14,6 +14,6 @@ namespace Atlas
 		return mSystemBitMap[type];
 	}
 
-	std::unordered_map<std::type_index, std::bitset<BITSIZE>> SystemBitManager::mSystemBitMap;
 	std::bitset<BITSIZE> SystemBitManager::mNextBit(1);
+	std::unordered_map<std::type_index, std::bitset<BITSIZE>> SystemBitManager::mSystemBitMap;
 }

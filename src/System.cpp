@@ -6,9 +6,9 @@ namespace Atlas
 {
 	System::System(World& world)
 		: mWorld(world)
-		, mEntities()
 		, mTypeBits()
 		, mSystemBits()
+		, mEntities()
 	{
 		////////////////////////////////////////////////////////////////////////////
 		////// Call addComponentType() in derived classes //////////////////////////

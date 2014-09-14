@@ -86,7 +86,7 @@ namespace Atlas
 		void toString();
 
 	private:
-		std::vector<System::Ptr>                            mSystems;
 		World&                                              mWorld;
+		std::vector<System::Ptr>                            mSystems;
 	};
 }

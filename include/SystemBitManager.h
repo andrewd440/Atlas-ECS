@@ -45,7 +45,7 @@ namespace Atlas
 	private:
 		SystemBitManager() = default; 		//Not meant for instantiation
 
-		static std::unordered_map<std::type_index, std::bitset<BITSIZE>>    mSystemBitMap;
 		static std::bitset<BITSIZE>                                         mNextBit;
+		static std::unordered_map<std::type_index, std::bitset<BITSIZE>>    mSystemBitMap;
 	};
 }

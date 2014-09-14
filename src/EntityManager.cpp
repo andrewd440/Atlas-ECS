@@ -18,6 +18,7 @@ namespace Atlas
 		, mActiveEntities(POOLSIZE)
 		, mDeadEntities()
 		, mComponentsByType(BITSIZE)
+		, mEntityComponents()
 	{
 	}
 

@@ -151,10 +151,10 @@ namespace Atlas
 		void removeComponentBit(const std::bitset<BITSIZE>& Bit);
 
 	private:
+		EntityManager&                  mEntityManager;
 		ID                              mID;
+		bool                            mIsActive;
 		std::bitset<BITSIZE>            mComponentBits;
 		std::bitset<BITSIZE>            mSystemBits;
-		EntityManager&                  mEntityManager;
-		bool                            mIsActive;
 	};
 }

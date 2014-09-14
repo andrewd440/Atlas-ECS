@@ -100,8 +100,8 @@ namespace Atlas
 
 	private:
 		World&                          mWorld;
-		std::vector<Entity::ID>         mEntities;
 		std::bitset<BITSIZE>            mTypeBits;
 		std::bitset<BITSIZE>            mSystemBits;
+		std::vector<Entity::ID>         mEntities;
 	};
 }

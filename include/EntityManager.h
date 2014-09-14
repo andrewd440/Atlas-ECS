@@ -130,9 +130,9 @@ namespace Atlas
 		void removeEntity(Entity& entity);
 
 	private:
+		World&                      mWorld;
 		unsigned int                mActiveEntityCount;
 		Entity::ID                  mNextAvaibleID;
-		World&                      mWorld;
 
 		/** Holds all entities with the ID being used as an index */
 		std::vector<Entity::Ptr>   mActiveEntities;
