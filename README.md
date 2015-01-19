@@ -1,6 +1,6 @@
 # Atlas - A Fast, Convenient C++ Entity Component System
 An [Entity Component System](http://en.wikipedia.org/wiki/Entity_component_system) is a software technique using Composition rather than Inheritance to build 
-high-performance code-architectures. Atlas was designed to take advantage of the decoupling and effeciency that this architecture provides in modern C++ 11.
+high-performance code-architectures. Atlas was designed to take advantage of the decoupling and efficiency that this architecture provides in modern C++ 11.
 
 Atlas is a simple and convenient entity component system that has influences
 from the popular Java ECS [Artemis](http://gamadu.com/artemis/)
